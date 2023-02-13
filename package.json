@@ -10,7 +10,9 @@
     "sass-watch": "sass --watch ./stylesheets/scss/style.scss ./stylesheets/style.css",
     "ci": "git cz"
   },
-  "dependencies": {
-    "git-cz": "^4.9.0"
+  "dependencies": {},
+  "devDependencies": {
+    "git-cz": "^4.9.0",
+    "sass": "^1.58.0"
   }
 }
