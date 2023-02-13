@@ -1,0 +1,16 @@
+{
+  "name": "flights",
+  "version": "0.1.0",
+  "description": "Flights page",
+  "main": "app.js",
+  "author": "Nguyen Tu<tu.nguyen@gody.vn>",
+  "license": "MIT",
+  "scripts": {
+    "sass-compile": "sass ./stylesheets/scss/style.scss ./stylesheets/style.css --style compressed",
+    "sass-watch": "sass --watch ./stylesheets/scss/style.scss ./stylesheets/style.css",
+    "ci": "git cz"
+  },
+  "dependencies": {
+    "git-cz": "^4.9.0"
+  }
+}
