@@ -1,11 +1,5 @@
 # Flights Layout Page
 
-> Make sure you that installed sass by running
-
-```sh
-yarn add global sass
-```
-
 1. Clone project
 
 ```sh
