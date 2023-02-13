@@ -1,4 +1,4 @@
-@import 'fonts', 'variables', 'normalize', 'small', 'medium', 'large', 'xlarge',
+@import 'variables', 'fonts', 'normalize', 'small', 'medium', 'large', 'xlarge',
   'xxlarge';
 
 //  X-Small	None	<576px
@@ -12,6 +12,20 @@
 // No media query for `xs` since this is the default in Bootstrap
 html,
 body {
-  font: 14px var(--fl-font-stack) normal;
+  font-size: 14px;
+  font-family: var(--fl-font-stack);
   background-color: var(--fl-background);
+}
+
+.fl-flight-header {
+  padding: 20px;
+  color: var(--fl-gray);
+  p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+  span {
+    font-size: 16px;
+  }
 }

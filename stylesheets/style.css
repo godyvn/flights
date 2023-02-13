@@ -1,3 +1,14 @@
+:root {
+  --fl-primary: #ff8c01;
+  --fl-black: #000000;
+  --fl-gray: #333333;
+  --fl-gray-100: #828282;
+  --fl-red: #eb5757;
+  --fl-background: #f9f9f9;
+  --fl-background: #faf1ec;
+  --fl-font-stack: "SVN-Gilroy", Helvetica, sans-serif;
+}
+
 @font-face {
   font-family: "SVN-Gilroy";
   font-style: Regular;
@@ -22,16 +33,6 @@
   font-weight: 600;
   src: url("https://media2.gody.vn/public/v7/SVN-Gilroy-Black/SVN-Gilroy SemiBold.otf") format("opentype");
 }
-:root {
-  --fl-primary: #ff8c01;
-  --fl-black: #000000;
-  --fl-gray: #333333;
-  --fl-gray-100: #828282;
-  --fl-red: #eb5757;
-  --fl-font-stack: "SVN-Gilroy", Helvetica, sans-serif;
-  --fl-background: #f9f9f9;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -343,8 +344,22 @@ template {
 
 html,
 body {
-  font: 14px var(--fl-font-stack) normal;
+  font-size: 14px;
+  font-family: var(--fl-font-stack);
   background-color: var(--fl-background);
+}
+
+.fl-flight-header {
+  padding: 20px;
+  color: var(--fl-gray);
+}
+.fl-flight-header p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+.fl-flight-header span {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
