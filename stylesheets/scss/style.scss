@@ -1,5 +1,4 @@
-@import 'variables', 'fonts', 'normalize', 'small', 'medium', 'large', 'xlarge',
-  'xxlarge';
+@import 'variables', 'fonts', 'small', 'medium', 'large', 'xlarge', 'xxlarge';
 
 //  X-Small	None	<576px
 // Small	sm	≥576px
@@ -17,15 +16,104 @@ body {
   background-color: var(--fl-background);
 }
 
-.fl-flight-header {
-  padding: 20px;
-  color: var(--fl-gray);
-  p {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 12px;
+.bg-white {
+  background-color: #ffffff;
+}
+
+.d-flex--center {
+  display: flex;
+  align-items: center;
+}
+
+.radio {
+  margin: 0;
+  &__item {
+    position: relative;
+    padding: 0 35px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 20px;
+    line-height: 22px;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      top: 0;
+      right: 0;
+
+      &:checked {
+        ~ .checkmark {
+          background-color: #fff;
+          border: 1px solid var(--fl-primary);
+          &:after {
+            display: block;
+            background-color: var(--fl-primary);
+          }
+        }
+      }
+    }
+
+    &:hover input {
+      ~ .checkmark {
+        background-color: #fff;
+      }
+    }
   }
-  span {
-    font-size: 16px;
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), 0 0 0 1px rgb(63 63 68 / 10%) !important;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), 0 0 0 1px rgb(63 63 68 / 10%) !important;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #fff;
+      transform: translate(-50%, -50%);
+    }
   }
 }
+
+.fl-main-content {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.fl-flight-type {
+  &__item {
+    display: inline-block;
+    width: auto;
+    padding: 0 35px !important;
+    font-weight: var(--fl-fw-medium) !important;
+  }
+}
+
+// .fl-flight-header {
+//   padding: 20px;
+//   color: var(--fl-gray);
+//   p {
+//     font-size: 20px;
+//     font-weight: 600;
+//     margin: 0 0 12px;
+//   }
+//   span {
+//     font-size: 16px;
+//   }
+// }

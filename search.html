@@ -5,28 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
   </head>
   <body>
     <div id="app-container">
-      <div class="main-content">
-        <div class="fl-search-form">Form search here</div>
-        <div class="fl-flights-list">
-          <!-- Flight header (S) -->
-          <div class="fl-flight-header">
-            <p>Chuyến bay từ Sài Gòn đến Hà Nội: 28/12/2022</p>
-            <span>1235 chuyến bay</span>
+      <div class="bg-white">
+        <div class="fl-main-content">
+          <div class="fl-search-box">
+            <div class="fl-flight-type radio">
+              <label class="fl-flight-type__item radio__item"
+                >Một chiều
+                <input type="radio" name="flightType" value="1" checked />
+                <span class="checkmark card5"></span
+              ></label>
+              <label class="fl-flight-type__item radio__item"
+                >Khứ hồi <input type="radio" name="flightType" value="2" />
+                <span class="checkmark card5"></span
+              ></label>
+            </div>
+            <div class="fl-search-form">
+              <div></div>
+              <div class="d-flex--center">
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >Chỉ các chuyến bay thẳng
+                    <input type="checkbox" name="searchType" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div>
+                  <button
+                    class="bg-primary tt-uppercase fc-white fw-500 h-50 ta-center bar-5 ps-relative outline-none ba bc-primary btn-search w-200 c-pointer"
+                  >
+                    Tìm kiếm
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Flight header (E) -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="fl-main-content">
+            <div class="fl-flights-list">
+              <!-- Flight header (S) -->
+              <div class="fl-flight-header">
+                <p>Chuyến bay từ Sài Gòn đến Hà Nội: 28/12/2022</p>
+                <span>1235 chuyến bay</span>
+              </div>
+              <!-- Flight header (E) -->
 
-          <!-- Flight list date (S) -->
-          <div class="fl-list-date">
-            <div></div>
+              <!-- Flight list date (S) -->
+              <div class="fl-list-date">
+                <div></div>
+              </div>
+              <!-- Flight list date (E) -->
+            </div>
           </div>
-          <!-- Flight list date (E) -->
         </div>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./javascript/bootstrap.min.js"></script>
     <script src="./javascript/main.js"></script>
   </body>
 </html>
