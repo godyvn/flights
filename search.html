@@ -10,8 +10,9 @@
   </head>
   <body>
     <div id="app-container">
-      <div class="bg-white">
-        <div class="fl-main-content">
+      <!-- Search Box (S) -->
+      <div class="fl--bg-white">
+        <div class="fl-container">
           <div class="fl-search-box">
             <div class="fl-flight-type radio">
               <label class="fl-flight-type__item radio__item"
@@ -24,31 +25,157 @@
                 <span class="checkmark card5"></span
               ></label>
             </div>
-            <div class="fl-search-form">
-              <div></div>
-              <div class="d-flex--center">
-                <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
-                    >Chỉ các chuyến bay thẳng
-                    <input type="checkbox" name="searchType" value="1" />
-                    <span class="checkmark card5"></span
-                  ></label>
+
+            <div class="fl-search-form d-flex--center">
+              <div class="d-flex--center fl-search-city">
+                <div>
+                  <label>Khởi hành từ</label>
+                  <input type="text" placeholder="Hồ Chí Minh" />
                 </div>
                 <div>
-                  <button
-                    class="bg-primary tt-uppercase fc-white fw-500 h-50 ta-center bar-5 ps-relative outline-none ba bc-primary btn-search w-200 c-pointer"
-                  >
-                    Tìm kiếm
-                  </button>
+                  <img
+                    src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/swap-horizontal-outline.svg"
+                    class="w-18"
+                    width="18"
+                  />
                 </div>
+                <div>
+                  <label>Đến</label>
+                  <input type="text" placeholder="Hà Nội" />
+                </div>
+              </div>
+              <div class="d-flex--center fl-search-date">
+                <div>
+                  <label>Ngày đi</label>
+                  <input type="text" placeholder="01/01/2023" />
+                </div>
+                <div>
+                  <label>Ngày về</label>
+                  <input type="text" placeholder="06/01/2023" />
+                </div>
+              </div>
+              <div class="fl-search-passenger">
+                <label>Hành khách</label>
+                <input
+                  type="text"
+                  placeholder="1 Người lớn, 0 Trẻ em, 0 Em bé"
+                />
+              </div>
+            </div>
+
+            <div class="d-flex--center">
+              <div class="radio checkbox mt-0 mb-0">
+                <label class="ds-inline-block radio__item w-auto mb-0"
+                  >Chỉ các chuyến bay thẳng
+                  <input type="checkbox" name="searchType" value="1" />
+                  <span class="checkmark card5"></span
+                ></label>
+              </div>
+              <div>
+                <button
+                  class="bg-primary tt-uppercase fc-white fw-500 h-50 ta-center bar-5 ps-relative outline-none ba bc-primary btn-search w-200 c-pointer"
+                >
+                  Tìm kiếm
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="fl-main-content">
+      <!-- Search Box (E) -->
+
+      <!-- Main Content (S) -->
+      <div>
+        <div class="fl-container">
+          <div class="fl-sidebar">
+            <!-- Price Filter (S) -->
+            <div>
+              <div>Hiển thị giá</div>
+              <div>
+                <div class="radio mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >Giá gồm thuế phí
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div class="radio mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >Giá chưa gồm thuế phí
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+              </div>
+            </div>
+            <!-- Price Filter (E) -->
+
+            <!-- Flight Filter (S) -->
+            <div>
+              <div>Chặng bay</div>
+              <div>
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >Tất cả
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >Bay thẳng
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >Nối chuyến
+                    <input type="checkbox" name="searchType" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+              </div>
+            </div>
+            <!-- Flight Filter (E) -->
+
+            <!-- Flight Filter (S) -->
+            <div>
+              <div>Lọc chuyên bay</div>
+              <div>
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >Chọn tất cả
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >VNA
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >VJ
+                    <input type="checkbox" name="searchType" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div class="radio checkbox mt-0 mb-0">
+                  <label class="ds-inline-block radio__item w-auto mb-0"
+                    >BAMBOO
+                    <input type="checkbox" name="searchType" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+              </div>
+            </div>
+            <!-- Flight Filter (E) -->
+          </div>
+          <div class="fl-primary">
             <div class="fl-flights-list">
               <!-- Flight header (S) -->
               <div class="fl-flight-header">
@@ -59,13 +186,204 @@
 
               <!-- Flight list date (S) -->
               <div class="fl-list-date">
+                <div>
+                  <div>arrow</div>
+                  <div>
+                    <div>
+                      <p>01/01 - 06/06</p>
+                      <p>2.549.000đ</p>
+                    </div>
+                    <div>
+                      <p>01/01 - 06/06</p>
+                      <p>2.549.000đ</p>
+                    </div>
+                    <div>
+                      <p>01/01 - 06/06</p>
+                      <p>2.549.000đ</p>
+                    </div>
+                    <div>
+                      <p>01/01 - 06/06</p>
+                      <p>2.549.000đ</p>
+                    </div>
+                    <div>
+                      <p>01/01 - 06/06</p>
+                      <p>2.549.000đ</p>
+                    </div>
+                  </div>
+                  <div>arrow</div>
+                </div>
                 <div></div>
               </div>
               <!-- Flight list date (E) -->
+
+              <div>
+                <label>Sắp xếp theo</label>
+                <button type="button">Đề xuất</button>
+                <ul class="nav nav-pills" role="tablist">
+                  <li role="presentation" class="dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-toggle"
+                      id="drop4"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="true"
+                    >
+                      Giá thấp đến cao <span class="caret"></span>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      id="menu1"
+                      aria-labelledby="drop4"
+                    >
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-toggle"
+                      id="drop5"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Thời gian bay <span class="caret"></span>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      id="menu2"
+                      aria-labelledby="drop5"
+                    >
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-toggle"
+                      id="drop6"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Thời gian đến <span class="caret"></span>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      id="menu3"
+                      aria-labelledby="drop6"
+                    >
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <img src="" alt="VNA" />
+                    <div>
+                      <p>Vietnam Airline</p>
+                      <p>VN7220</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <p>07:10</p>
+                      <p>SGN</p>
+                    </div>
+                    <div>arrow</div>
+                    <div>
+                      <p>07:10</p>
+                      <p>HAN</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <img
+                        src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/time-outline.svg"
+                        class="w-18"
+                        width="18"
+                      />
+                      <span>1h</span>
+                    </div>
+                    <a
+                      class="btn btn-primary"
+                      role="button"
+                      data-toggle="collapse"
+                      href="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Thông tin chuyến bay
+                    </a>
+                  </div>
+                  <div>
+                    <p>1.150.000đ</p>
+                    <button type="button">Chọn</button>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                  <div class="well">
+                    <div>
+                      <div>
+                        <p>Ngày 8 tháng 12</p>
+                        <p>07:10</p>
+                      </div>
+                      <div>
+                        <img
+                          src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/time-outline.svg"
+                          class="w-18"
+                          width="18"
+                        />
+                        <span>1h</span>
+                      </div>
+                      <div>
+                        <p>Ngày 8 tháng 12</p>
+                        <p>07:10</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <p>SGN</p>
+                        <p>Sân bay Tân Sơn Nhất</p>
+                        <p>TP.Hồ Chí Minh</p>
+                      </div>
+                      <div>
+                        <p>VNA</p>
+                        <p>VN7220 Vietnam Airline</p>
+                        <p>Airbus7220</p>
+                      </div>
+                      <div>
+                        <p>HAN</p>
+                        <p>Sân bay Nội Bài</p>
+                        <p>Hà Nội</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Main Content (E) -->
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

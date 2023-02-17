@@ -3,6 +3,7 @@
   --fl-black: #000000;
   --fl-gray: #333333;
   --fl-gray-100: #828282;
+  --fl-gray-200: #4f4f4f;
   --fl-red: #eb5757;
   --fl-background: #f9f9f9;
   --fl-background: #faf1ec;
@@ -43,7 +44,7 @@ body {
   background-color: var(--fl-background);
 }
 
-.bg-white {
+.fl--bg-white {
   background-color: #ffffff;
 }
 
@@ -57,8 +58,9 @@ body {
 }
 .radio__item {
   position: relative;
-  padding: 0 35px;
+  padding-left: 35px !important;
   margin-bottom: 0;
+  margin-right: 20px;
   cursor: pointer;
   font-size: 14px;
   -webkit-user-select: none;
@@ -109,17 +111,67 @@ body {
   background: #fff;
   transform: translate(-50%, -50%);
 }
+.radio.checkbox .checkmark {
+  border-radius: 2px;
+}
+.radio.checkbox .checkmark:after {
+  top: 0;
+  left: 5px;
+  width: 5px !important;
+  height: 10px !important;
+  border: solid #ff8c00;
+  border-width: 0 3px 3px 0 !important;
+  -webkit-transform: rotate(45deg) !important;
+  -ms-transform: rotate(45deg) !important;
+  transform: rotate(45deg) !important;
+  background: #fff !important;
+  box-sizing: unset !important;
+  border-radius: unset !important;
+}
 
-.fl-main-content {
-  max-width: 1050px;
+.fl-container {
+  width: 1050px;
   margin: 0 auto;
 }
 
-.fl-flight-type__item {
-  display: inline-block;
-  width: auto;
-  padding: 0 35px !important;
+.fl-search-box {
+  padding-top: 32px;
+}
+.fl-search-box .fl-flight-type {
+  margin-bottom: 16px;
+}
+.fl-search-box .fl-flight-type__item {
   font-weight: var(--fl-fw-medium) !important;
+}
+.fl-search-box .fl-search-form {
+  border: 1px solid var(--fl-primary);
+  border-radius: 8px;
+  padding: 10px 0 8px;
+}
+.fl-search-box .fl-search-form label {
+  color: var(--fl-gray);
+  line-height: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.fl-search-box .fl-search-form input {
+  border: 0;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--fl-gray-200);
+}
+.fl-search-box .fl-search-city {
+  width: 41%;
+  flex: 1 auto;
+  padding: 0 24px;
+}
+.fl-search-box .fl-search-date,
+.fl-search-box .fl-search-passenger {
+  width: 30%;
+  padding: 0 24px;
+  flex: 1 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
