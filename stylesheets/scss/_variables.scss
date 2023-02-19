@@ -4,11 +4,21 @@
   --fl-gray: #333333;
   --fl-gray-100: #828282;
   --fl-gray-200: #4f4f4f;
+  --fl-gray-500: #e0e0e0;
+  --fl-gray-222: #222;
+  --fl-gray-666: #666;
   --fl-red: #eb5757;
-  --fl-background: #f9f9f9;
+  --fl-background-f9: #f9f9f9;
   --fl-background: #faf1ec;
+  --fl-background-f8: #f8f8f8;
   --fl-font-stack: 'SVN-Gilroy', Helvetica, sans-serif;
   --fl-fw-medium: 500;
   --fl-fw-semibold: 600;
   --fl-fw-bold: 700;
 }
+
+$box-shadow-1: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
+$filter-primary: invert(58%) sepia(9%) saturate(6493%) hue-rotate(359deg)
+  brightness(101%) contrast(103%);
+$filter-white: invert(100%) sepia(0%) saturate(0%) hue-rotate(153deg)
+  brightness(114%) contrast(101%);

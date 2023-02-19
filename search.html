@@ -26,44 +26,168 @@
               ></label>
             </div>
 
-            <div class="fl-search-form d-flex--center">
-              <div class="d-flex--center fl-search-city">
-                <div>
+            <div class="fl-search-form d-flex flex--center">
+              <div class="d-flex flex--center fl-search-city">
+                <div class="fl-search-city__item dropdown">
                   <label>Khởi hành từ</label>
-                  <input type="text" placeholder="Hồ Chí Minh" />
-                </div>
-                <div>
-                  <img
-                    src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/swap-horizontal-outline.svg"
-                    class="w-18"
-                    width="18"
+                  <input
+                    type="text"
+                    placeholder="Hồ Chí Minh"
+                    data-toggle="dropdown"
                   />
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <span class="plane-icon"></span>
+                      <p class="airport-name">Afghanistan</p>
+                      <p class="airport-country">Châu Á</p>
+                    </li>
+                    <li>
+                      <span class="plane-icon"></span>
+                      <p class="airport-name">Singapore</p>
+                      <p class="airport-country">Châu Á</p>
+                    </li>
+                    <li>
+                      <span class="plane-icon"></span>
+                      <p class="airport-name">Hong Kong</p>
+                      <p class="airport-country">Châu Á</p>
+                    </li>
+                  </ul>
                 </div>
                 <div>
+                  <img src="./images/swap-horizontal-outline.svg" width="20" />
+                </div>
+                <div class="fl-search-city__item dropdown">
                   <label>Đến</label>
-                  <input type="text" placeholder="Hà Nội" />
+                  <input
+                    type="text"
+                    placeholder="Hà Nội"
+                    data-toggle="dropdown"
+                  />
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <span class="plane-icon"></span>
+                      <p class="airport-name">Afghanistan</p>
+                      <p class="airport-country">Châu Á</p>
+                    </li>
+                    <li>
+                      <span class="plane-icon"></span>
+                      <p class="airport-name">Singapore</p>
+                      <p class="airport-country">Châu Á</p>
+                    </li>
+                    <li>
+                      <span class="plane-icon"></span>
+                      <p class="airport-name">Hong Kong</p>
+                      <p class="airport-country">Châu Á</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="d-flex--center fl-search-date">
-                <div>
+
+              <!-- Date (S) -->
+              <div class="d-flex flex--center fl-search-date">
+                <div class="fl-search-date__item">
                   <label>Ngày đi</label>
                   <input type="text" placeholder="01/01/2023" />
                 </div>
-                <div>
+                <div class="fl-search-date__item">
                   <label>Ngày về</label>
                   <input type="text" placeholder="06/01/2023" />
                 </div>
               </div>
-              <div class="fl-search-passenger">
+              <!-- Date (E) -->
+
+              <!-- Passengers (S) -->
+              <div class="fl-search-passenger dropdown">
                 <label>Hành khách</label>
                 <input
                   type="text"
                   placeholder="1 Người lớn, 0 Trẻ em, 0 Em bé"
+                  data-toggle="dropdown"
                 />
+                <!-- <img src="/.images/chevron-down-outline.svg" class="w-18 mb-1 mr-8" width="23"> -->
+
+                <div class="dropdown-menu">
+                  <div class="d-flex flex--center psg-counter">
+                    <div
+                      class="d-flex flex--vertical-center fl-col-6 counter-label"
+                    >
+                      <img src="./images/ic_adult.svg" alt="adult" />
+                      <div>
+                        <label>Người lớn</label>
+                        <p>12 tuổi trở lên</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex flex--vertical-center flex--horizontal-end fl-col-6 stepper-counter"
+                    >
+                      <button type="button">
+                        <img src="./images/remove-outline.svg" alt="remove" />
+                      </button>
+                      <span class="stepper-num">1</span>
+                      <button type="button">
+                        <img src="./images/add-outline.svg" alt="add" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex--center psg-counter">
+                    <div
+                      class="d-flex flex--vertical-center fl-col-6 counter-label"
+                    >
+                      <img src="./images/ic_child.svg" alt="child" />
+                      <div>
+                        <label>Trẻ em</label>
+                        <p>2 - 11 tuổi</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex flex--vertical-center flex--horizontal-end fl-col-6 stepper-counter"
+                    >
+                      <button type="button">
+                        <img src="./images/remove-outline.svg" alt="remove" />
+                      </button>
+                      <span class="stepper-num">0</span>
+                      <button type="button">
+                        <img src="./images/add-outline.svg" alt="add" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex--center psg-counter">
+                    <div
+                      class="d-flex flex--vertical-center fl-col-6 counter-label"
+                    >
+                      <img src="./images/ic_infant.svg" alt="infant" />
+                      <div>
+                        <label>Em bé</label>
+                        <p>Dưới 2 tuổi</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex flex--vertical-center flex--horizontal-end fl-col-6 stepper-counter"
+                    >
+                      <button type="button">
+                        <img src="./images/remove-outline.svg" alt="remove" />
+                      </button>
+                      <span class="stepper-num">0</span>
+                      <button type="button">
+                        <img src="./images/add-outline.svg" alt="add" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- Passengers (E) -->
             </div>
 
-            <div class="d-flex--center">
+            <div
+              class="d-flex flex--vertical-center flex--space-between fl-search-btn"
+            >
               <div class="radio checkbox mt-0 mb-0">
                 <label class="ds-inline-block radio__item w-auto mb-0"
                   >Chỉ các chuyến bay thẳng
@@ -72,11 +196,7 @@
                 ></label>
               </div>
               <div>
-                <button
-                  class="bg-primary tt-uppercase fc-white fw-500 h-50 ta-center bar-5 ps-relative outline-none ba bc-primary btn-search w-200 c-pointer"
-                >
-                  Tìm kiếm
-                </button>
+                <button type="button">Tìm kiếm</button>
               </div>
             </div>
           </div>
@@ -85,22 +205,22 @@
       <!-- Search Box (E) -->
 
       <!-- Main Content (S) -->
-      <div>
-        <div class="fl-container">
+      <div class="fl-main">
+        <div class="fl-container d-flex">
           <div class="fl-sidebar">
             <!-- Price Filter (S) -->
-            <div>
-              <div>Hiển thị giá</div>
-              <div>
-                <div class="radio mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+            <div class="fl-card">
+              <div class="fl-card__title">Hiển thị giá</div>
+              <div class="fl-card__content">
+                <div class="radio">
+                  <label class="radio__item"
                     >Giá gồm thuế phí
                     <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
-                <div class="radio mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+                <div class="radio">
+                  <label class="radio__item"
                     >Giá chưa gồm thuế phí
                     <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
@@ -111,27 +231,27 @@
             <!-- Price Filter (E) -->
 
             <!-- Flight Filter (S) -->
-            <div>
-              <div>Chặng bay</div>
-              <div>
-                <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+            <div class="fl-card">
+              <div class="fl-card__title">Chặng bay</div>
+              <div class="fl-card__content">
+                <div class="radio checkbox">
+                  <label class="radio__item"
                     >Tất cả
                     <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
-                <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+                <div class="radio checkbox">
+                  <label class="radio__item"
                     >Bay thẳng
                     <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
-                <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+                <div class="radio checkbox">
+                  <label class="radio__item"
                     >Nối chuyến
-                    <input type="checkbox" name="searchType" value="1" />
+                    <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
@@ -140,34 +260,34 @@
             <!-- Flight Filter (E) -->
 
             <!-- Flight Filter (S) -->
-            <div>
-              <div>Lọc chuyên bay</div>
-              <div>
-                <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+            <div class="fl-card">
+              <div class="fl-card__title">Lọc chuyến bay</div>
+              <div class="fl-card__content">
+                <div class="radio checkbox">
+                  <label class="radio__item"
                     >Chọn tất cả
                     <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
                 <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+                  <label class="radio__item"
                     >VNA
                     <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
                 <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+                  <label class="radio__item"
                     >VJ
-                    <input type="checkbox" name="searchType" value="1" />
+                    <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
                 <div class="radio checkbox mt-0 mb-0">
-                  <label class="ds-inline-block radio__item w-auto mb-0"
+                  <label class="radio__item"
                     >BAMBOO
-                    <input type="checkbox" name="searchType" value="1" />
+                    <input type="checkbox" value="1" />
                     <span class="checkmark card5"></span
                   ></label>
                 </div>
@@ -176,7 +296,7 @@
             <!-- Flight Filter (E) -->
           </div>
           <div class="fl-primary">
-            <div class="fl-flights-list">
+            <div class="fl-flights">
               <!-- Flight header (S) -->
               <div class="fl-flight-header">
                 <p>Chuyến bay từ Sài Gòn đến Hà Nội: 28/12/2022</p>
@@ -185,40 +305,61 @@
               <!-- Flight header (E) -->
 
               <!-- Flight list date (S) -->
-              <div class="fl-list-date">
-                <div>
-                  <div>arrow</div>
-                  <div>
-                    <div>
-                      <p>01/01 - 06/06</p>
-                      <p>2.549.000đ</p>
+              <div class="fl-date d-flex">
+                <div class="d-flex flex--center date-list">
+                  <div class="date-arrow">
+                    <button type="button">
+                      <img
+                        src="./images/chevron-back-outline.svg"
+                        alt="arrow"
+                      />
+                    </button>
+                  </div>
+                  <div class="d-flex">
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
                     </div>
-                    <div>
-                      <p>01/01 - 06/06</p>
-                      <p>2.549.000đ</p>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
                     </div>
-                    <div>
-                      <p>01/01 - 06/06</p>
-                      <p>2.549.000đ</p>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
                     </div>
-                    <div>
-                      <p>01/01 - 06/06</p>
-                      <p>2.549.000đ</p>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
                     </div>
-                    <div>
-                      <p>01/01 - 06/06</p>
-                      <p>2.549.000đ</p>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
                     </div>
                   </div>
-                  <div>arrow</div>
+                  <div class="date-arrow">
+                    <button type="button">
+                      <img
+                        src="./images/chevron-forward-outline.svg"
+                        alt="arrow"
+                      />
+                    </button>
+                  </div>
                 </div>
-                <div></div>
+                <div class="date-calendar d-flex flex--center">
+                  <img src="./images/calendar-outline.svg" alt="calendar" />
+                </div>
               </div>
               <!-- Flight list date (E) -->
 
-              <div>
-                <label>Sắp xếp theo</label>
-                <button type="button">Đề xuất</button>
+              <div class="d-flex flex--vertical-center fl-mb25">
+                <label class="fl-mr16">Sắp xếp theo</label>
+                <button
+                  class="btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16"
+                  type="button"
+                >
+                  Đề xuất
+                </button>
                 <ul class="nav nav-pills" role="tablist">
                   <li role="presentation" class="dropdown">
                     <a
@@ -294,86 +435,88 @@
                   </li>
                 </ul>
               </div>
-              <div>
+              <div class="fl-bar8">
                 <div>
-                  <div>
-                    <img src="" alt="VNA" />
+                  <div class="d-flex flex--space-between">
                     <div>
-                      <p>Vietnam Airline</p>
-                      <p>VN7220</p>
+                      <img src="" alt="VNA" />
+                      <div>
+                        <p>Vietnam Airline</p>
+                        <p>VN7220</p>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <div>
-                      <p>07:10</p>
-                      <p>SGN</p>
-                    </div>
-                    <div>arrow</div>
-                    <div>
-                      <p>07:10</p>
-                      <p>HAN</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img
-                        src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/time-outline.svg"
-                        class="w-18"
-                        width="18"
-                      />
-                      <span>1h</span>
-                    </div>
-                    <a
-                      class="btn btn-primary"
-                      role="button"
-                      data-toggle="collapse"
-                      href="#collapseExample"
-                      aria-expanded="false"
-                      aria-controls="collapseExample"
-                    >
-                      Thông tin chuyến bay
-                    </a>
-                  </div>
-                  <div>
-                    <p>1.150.000đ</p>
-                    <button type="button">Chọn</button>
-                  </div>
-                </div>
-                <div class="collapse" id="collapseExample">
-                  <div class="well">
                     <div>
                       <div>
-                        <p>Ngày 8 tháng 12</p>
                         <p>07:10</p>
+                        <p>SGN</p>
                       </div>
+                      <div>arrow</div>
+                      <div>
+                        <p>07:10</p>
+                        <p>HAN</p>
+                      </div>
+                    </div>
+                    <div>
                       <div>
                         <img
-                          src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/time-outline.svg"
+                          src="./images/time-outline.svg"
                           class="w-18"
                           width="18"
                         />
                         <span>1h</span>
                       </div>
-                      <div>
-                        <p>Ngày 8 tháng 12</p>
-                        <p>07:10</p>
-                      </div>
+                      <a
+                        class="btn btn-primary"
+                        role="button"
+                        data-toggle="collapse"
+                        href="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        Thông tin chuyến bay
+                      </a>
                     </div>
                     <div>
+                      <p>1.150.000đ</p>
+                      <button type="button">Chọn</button>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                    <div class="well">
                       <div>
-                        <p>SGN</p>
-                        <p>Sân bay Tân Sơn Nhất</p>
-                        <p>TP.Hồ Chí Minh</p>
+                        <div>
+                          <p>Ngày 8 tháng 12</p>
+                          <p>07:10</p>
+                        </div>
+                        <div>
+                          <img
+                            src="./images/time-outline.svg"
+                            class="w-18"
+                            width="18"
+                          />
+                          <span>1h</span>
+                        </div>
+                        <div>
+                          <p>Ngày 8 tháng 12</p>
+                          <p>07:10</p>
+                        </div>
                       </div>
                       <div>
-                        <p>VNA</p>
-                        <p>VN7220 Vietnam Airline</p>
-                        <p>Airbus7220</p>
-                      </div>
-                      <div>
-                        <p>HAN</p>
-                        <p>Sân bay Nội Bài</p>
-                        <p>Hà Nội</p>
+                        <div>
+                          <p>SGN</p>
+                          <p>Sân bay Tân Sơn Nhất</p>
+                          <p>TP.Hồ Chí Minh</p>
+                        </div>
+                        <div>
+                          <p>VNA</p>
+                          <p>VN7220 Vietnam Airline</p>
+                          <p>Airbus7220</p>
+                        </div>
+                        <div>
+                          <p>HAN</p>
+                          <p>Sân bay Nội Bài</p>
+                          <p>Hà Nội</p>
+                        </div>
                       </div>
                     </div>
                   </div>
