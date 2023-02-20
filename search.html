@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./stylesheets/style.css" />
   </head>
   <body>
-    <div id="app-container">
+    <div id="app-container" class="fl-search-page">
       <!-- Search Box (S) -->
       <div class="fl-bg-white">
         <div class="fl-container">
@@ -355,25 +355,31 @@
 
               <!-- Sort (S) -->
               <div class="d-flex flex--vertical-center fl-mb25">
-                <label class="fl-mr16">Sắp xếp theo</label>
+                <label class="fl-mr16 fl-mb0">Sắp xếp theo</label>
                 <button
-                  class="btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16 fl-h:bg-primary"
+                  class="fl-btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16 fl-h:bg-primary"
                   type="button"
                 >
                   Đề xuất
                 </button>
                 <ul class="nav nav-pills" role="tablist">
-                  <li role="presentation" class="dropdown">
+                  <li role="presentation" class="dropdown fl-dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white fl-fc-gray"
                       id="drop4"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="true"
                     >
-                      Giá thấp đến cao <span class="caret"></span>
+                      Giá thấp đến cao
+                      <img
+                        src="./images/chevron-down-outline.svg"
+                        alt="arrow"
+                        width="15"
+                        class="fl-filter-gray --chevron-down"
+                      />
                     </a>
                     <ul
                       class="dropdown-menu"
@@ -384,17 +390,23 @@
                       <li><a href="#">Giá cao đến thấp</a></li>
                     </ul>
                   </li>
-                  <li role="presentation" class="dropdown">
+                  <li role="presentation" class="dropdown fl-dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white fl-fc-gray"
                       id="drop5"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Thời gian bay <span class="caret"></span>
+                      Thời gian bay
+                      <img
+                        src="./images/chevron-down-outline.svg"
+                        alt="arrow"
+                        width="15"
+                        class="fl-filter-gray --chevron-down"
+                      />
                     </a>
                     <ul
                       class="dropdown-menu"
@@ -405,17 +417,23 @@
                       <li><a href="#">Muộn nhất</a></li>
                     </ul>
                   </li>
-                  <li role="presentation" class="dropdown">
+                  <li role="presentation" class="dropdown fl-dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white fl-fc-gray"
                       id="drop6"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Thời gian đến <span class="caret"></span>
+                      Thời gian đến
+                      <img
+                        src="./images/chevron-down-outline.svg"
+                        alt="arrow"
+                        width="15"
+                        class="fl-filter-gray --chevron-down"
+                      />
                     </a>
                     <ul
                       class="dropdown-menu"
@@ -467,7 +485,7 @@
                         <span class="flight-info-duration__timer">1h</span>
                       </div>
                       <a
-                        class="btn btn-flight-info"
+                        class="btn btn-flight-info fl-dropdown"
                         role="button"
                         data-toggle="collapse"
                         href="#flightInfo1"
@@ -478,6 +496,7 @@
                         <img
                           src="./images/chevron-down-outline.svg"
                           alt="arrow"
+                          class="fl-filter-gray --chevron-down"
                         />
                       </a>
                     </div>
@@ -485,7 +504,7 @@
                       <div class="flight-info-price">1.150.000đ</div>
                       <button
                         type="button"
-                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                        class="fl-btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
                       >
                         Chọn
                       </button>
@@ -655,7 +674,7 @@
                         <span class="flight-info-duration__timer">1h</span>
                       </div>
                       <a
-                        class="btn btn-flight-info"
+                        class="btn btn-flight-info fl-dropdown"
                         role="button"
                         data-toggle="collapse"
                         href="#flightInfo2"
@@ -666,6 +685,7 @@
                         <img
                           src="./images/chevron-down-outline.svg"
                           alt="arrow"
+                          class="--chevron-down"
                         />
                       </a>
                     </div>
@@ -673,7 +693,7 @@
                       <div class="flight-info-price">1.150.000đ</div>
                       <button
                         type="button"
-                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                        class="fl-btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
                       >
                         Chọn
                       </button>
@@ -859,25 +879,31 @@
 
               <!-- Sort (S) -->
               <div class="d-flex flex--vertical-center fl-mb25">
-                <label class="fl-mr16">Sắp xếp theo</label>
+                <label class="fl-mr16 fl-mb0">Sắp xếp theo</label>
                 <button
-                  class="btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16 fl-h:bg-primary"
+                  class="fl-btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16 fl-h:bg-primary"
                   type="button"
                 >
                   Đề xuất
                 </button>
                 <ul class="nav nav-pills" role="tablist">
-                  <li role="presentation" class="dropdown">
+                  <li role="presentation" class="dropdown fl-dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white fl-fc-gray"
                       id="drop4"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="true"
                     >
-                      Giá thấp đến cao <span class="caret"></span>
+                      Giá thấp đến cao
+                      <img
+                        src="./images/chevron-down-outline.svg"
+                        alt="arrow"
+                        width="15"
+                        class="fl-filter-gray --chevron-down"
+                      />
                     </a>
                     <ul
                       class="dropdown-menu"
@@ -888,17 +914,23 @@
                       <li><a href="#">Giá cao đến thấp</a></li>
                     </ul>
                   </li>
-                  <li role="presentation" class="dropdown">
+                  <li role="presentation" class="dropdown fl-dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white fl-fc-gray"
                       id="drop5"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Thời gian bay <span class="caret"></span>
+                      Thời gian bay
+                      <img
+                        src="./images/chevron-down-outline.svg"
+                        alt="arrow"
+                        width="15"
+                        class="fl-filter-gray --chevron-down"
+                      />
                     </a>
                     <ul
                       class="dropdown-menu"
@@ -909,17 +941,23 @@
                       <li><a href="#">Muộn nhất</a></li>
                     </ul>
                   </li>
-                  <li role="presentation" class="dropdown">
+                  <li role="presentation" class="dropdown fl-dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white fl-fc-gray"
                       id="drop6"
                       data-toggle="dropdown"
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Thời gian đến <span class="caret"></span>
+                      Thời gian đến
+                      <img
+                        src="./images/chevron-down-outline.svg"
+                        alt="arrow"
+                        width="15"
+                        class="fl-filter-gray --chevron-down"
+                      />
                     </a>
                     <ul
                       class="dropdown-menu"
@@ -971,17 +1009,18 @@
                         <span class="flight-info-duration__timer">1h</span>
                       </div>
                       <a
-                        class="btn btn-flight-info"
+                        class="btn btn-flight-info fl-dropdown"
                         role="button"
                         data-toggle="collapse"
-                        href="#flightInfo1"
+                        href="#flightInfo3"
                         aria-expanded="false"
-                        aria-controls="flightInfo1"
+                        aria-controls="flightInfo3"
                       >
                         Thông tin chuyến bay
                         <img
                           src="./images/chevron-down-outline.svg"
                           alt="arrow"
+                          class="--chevron-down"
                         />
                       </a>
                     </div>
@@ -989,13 +1028,13 @@
                       <div class="flight-info-price">1.150.000đ</div>
                       <button
                         type="button"
-                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                        class="fl-btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
                       >
                         Chọn
                       </button>
                     </div>
                   </div>
-                  <div class="collapse flight-info-details" id="flightInfo1">
+                  <div class="collapse flight-info-details" id="flightInfo3">
                     <div class="d-flex fl-py20">
                       <div class="flight-info-stop">
                         <div class="flight-info-airline__date">
@@ -1159,17 +1198,18 @@
                         <span class="flight-info-duration__timer">1h</span>
                       </div>
                       <a
-                        class="btn btn-flight-info"
+                        class="btn btn-flight-info fl-dropdown"
                         role="button"
                         data-toggle="collapse"
-                        href="#flightInfo2"
+                        href="#flightInfo4"
                         aria-expanded="false"
-                        aria-controls="flightInfo2"
+                        aria-controls="flightInfo4"
                       >
                         Thông tin chuyến bay
                         <img
                           src="./images/chevron-down-outline.svg"
                           alt="arrow"
+                          class="--chevron-down"
                         />
                       </a>
                     </div>
@@ -1177,13 +1217,13 @@
                       <div class="flight-info-price">1.150.000đ</div>
                       <button
                         type="button"
-                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                        class="fl-btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
                       >
                         Chọn
                       </button>
                     </div>
                   </div>
-                  <div class="collapse flight-info-details" id="flightInfo2">
+                  <div class="collapse flight-info-details" id="flightInfo4">
                     <div class="d-flex fl-py20">
                       <div class="flight-info-stop">
                         <div class="flight-info-airline__date">

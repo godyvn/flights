@@ -104,6 +104,10 @@
   border-top-width: 1px;
   border-top-style: solid;
 }
+.fl-bb {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
 .fl-bc-gray-500 {
   border-color: var(--fl-gray-500);
 }
@@ -123,6 +127,9 @@
 
 .fl-h\:fc-white:hover {
   color: #fff !important;
+  .--chevron-down {
+    filter: $filter-white;
+  }
 }
 
 .fl-fc-gray {
@@ -135,6 +142,14 @@
 
 .fl-fc-red {
   color: var(--fl-red);
+}
+
+.fl-fc-primary {
+  color: var(--fl-primary);
+}
+
+.fl-fc-black {
+  color: var(--fl-black);
 }
 
 /* Display (S) */
@@ -189,15 +204,22 @@
 }
 
 .fl-fw-medium {
-  font-weight: var(--fl-fw-medium);
+  font-weight: var(--fl-fw-medium) !important;
 }
 
 .fl-fw-semibold {
-  font-weight: var(--fl-fw-semibold);
+  font-weight: var(--fl-fw-semibold) !important;
+}
+
+.fl-fs-italic {
+  font-style: italic;
 }
 
 /* Filter */
-.filter-gray-100 {
+.fl-filter-gray {
+  filter: $filter-gray;
+}
+.fl-filter-gray-100 {
   filter: $filter-gray-100;
 }
 
@@ -206,7 +228,7 @@
   width: 50%;
 }
 
-.btn-primary {
+.fl-btn-primary {
   background-color: var(--fl-primary);
   border: 0;
   outline: none;
@@ -217,11 +239,27 @@
 .fl-h32 {
   height: 32px;
 }
+.fl-h34 {
+  height: 34px;
+}
+.fl-h48 {
+  height: 48px;
+}
 
 /* Spacing (S) */
 .fl-py6 {
   padding-top: 6px !important;
   padding-bottom: 6px !important;
+}
+.fl-pl15 {
+  padding-left: 15px;
+}
+.fl-pr15 {
+  padding-right: 15px;
+}
+.fl-px16 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .fl-px18 {
   padding-left: 18px;
@@ -238,33 +276,69 @@
   padding-left: 24px;
   padding-right: 24px;
 }
+.fl-py25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .fl-px30 {
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .fl-mb0 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .fl-mb5 {
   margin-bottom: 5px;
 }
 
+.fl-mb12 {
+  margin-bottom: 12px;
+}
+
 .fl-mr14 {
   margin-right: 14px;
 }
 
+.fl-mr15 {
+  margin-right: 15px;
+}
+
+.fl-ml15 {
+  margin-left: 15px;
+}
+
 .fl-mr16 {
-  margin-right: 16px;
+  margin-right: 16px !important;
+}
+
+.fl-mb16 {
+  margin-bottom: 16px !important;
+}
+
+.fl-mb18 {
+  margin-bottom: 18px;
 }
 
 .fl-mr20 {
   margin-right: 20px;
 }
 
+.fl-mb24 {
+  margin-bottom: 24px !important;
+}
+
 .fl-mb25 {
   margin-bottom: 25px;
+}
+
+.fl-mr30 {
+  margin-right: 30px;
+}
+
+.fl-mb30 {
+  margin-bottom: 30px;
 }
 
 .fl-mt60 {
@@ -279,6 +353,10 @@
 
 .fl-w32 {
   width: 32px;
+}
+
+.fl-w-fit {
+  width: 100%;
 }
 
 .fl-card {

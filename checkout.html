@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body>
+    <div id="app-container" class="fl-checkout-page fl-main">
+      <form method="POST" action="">
+        <div class="fl-container d-flex">
+          <div class="fl-primary fl-mr30">
+            <div class="fl-checkout-title">Vé máy bay</div>
+            <div class="fl-card fl-checkout-card">
+              <div
+                class="d-flex flex--space-between flex--vertical-center fl-checkout-card__header fl-mb24"
+              >
+                <div class="--title">Thông tin người đặt</div>
+                <button
+                  type="button"
+                  class="fl-btn-primary fl-h34 fl-px18 fl-bar8 fl-fs16 fl-h:bg-primary"
+                >
+                  Đăng nhập
+                </button>
+              </div>
+              <div class="fl-form-group fl-col-6 fl-pr15">
+                <label>Họ tên</label>
+                <input
+                  type="input"
+                  placeholder=""
+                  class="fl-form-control --w-fit"
+                />
+              </div>
+              <div class="fl-form-group d-flex flex--space-between fl-mb24">
+                <div class="fl-col-6 fl-pr15">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder=""
+                    class="fl-form-control --w-fit"
+                  />
+                </div>
+                <div class="fl-col-6 fl-pl15">
+                  <label>Số điện thoại</label>
+                  <input
+                    type="input"
+                    placeholder=""
+                    class="fl-form-control --w-fit"
+                  />
+                </div>
+              </div>
+              <div>
+                <div class="fl-fs16 fl-fc-primary fl-fw-medium fl-mb16">
+                  Bạn đặt dịch vụ cho ai?
+                </div>
+                <div class="radio fl-mb16">
+                  <label class="radio__item"
+                    >Đặt dịch vụ cho tôi
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+                <div class="radio fl-mb0">
+                  <label class="radio__item"
+                    >Đặt dịch vụ cho người khác
+                    <input type="checkbox" value="1" />
+                    <span class="checkmark card5"></span
+                  ></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-card fl-checkout-card">
+              <div class="fl-checkout-card__header fl-mb24">
+                <div class="--title">Thông tin người sử dụng dịch vụ</div>
+              </div>
+              <div class="fl-mb30">
+                <div class="fl-fs20 fl-fc-gray fl-fw-medium fl-mb12">
+                  Người lớn
+                </div>
+                <div class="fl-fc-black fl-fs-italic">
+                  Hãy chắc chắn rằng tên của hành khách khớp với tên trên
+                  CCCD/CMND/Hộ chiếu/Giấy phép lái xe do chính phủ cấp. Bạn nên
+                  tránh sai sót vì một số hãng hàng không không cho phép sửa tên
+                  sau khi đặt vé.
+                </div>
+              </div>
+              <div class="fl-form-group fl-col-6 fl-pr15">
+                <label>Danh xưng</label>
+                <div class="fl-select-custom fl-col-6">
+                  <label>
+                    <img
+                      src="./images/chevron-down-outline.svg"
+                      alt="arrow"
+                      width="16"
+                      class="fl-filter-gray --chevron-down"
+                    />
+                  </label>
+                  <select class="fl-form-control --w-fit --appearance-none">
+                    <option>Ông</option>
+                    <option>Bà</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fl-form-group d-flex flex--space-between fl-mb24">
+                <div class="fl-col-6 fl-pr15">
+                  <label>Họ (vd: Nguyen)</label>
+                  <input
+                    type="type"
+                    placeholder=""
+                    class="fl-form-control --w-fit"
+                  />
+                </div>
+                <div class="fl-col-6 fl-pl15">
+                  <label>Tên đệm & tên (vd: Van A)</label>
+                  <input
+                    type="input"
+                    placeholder=""
+                    class="fl-form-control --w-fit"
+                  />
+                </div>
+              </div>
+              <div class="fl-form-group d-flex flex--space-between fl-mb24">
+                <div class="fl-col-6 fl-pr15">
+                  <label>Ngày tháng năm sinh</label>
+                  <input
+                    type="type"
+                    placeholder="DD/MM/YYYY"
+                    class="fl-form-control --w-fit"
+                  />
+                </div>
+                <div class="fl-col-6 fl-pl15">
+                  <label>Quốc tịch</label>
+                  <div class="fl-select-custom">
+                    <label>
+                      <img
+                        src="./images/chevron-down-outline.svg"
+                        alt="arrow"
+                        width="16"
+                        class="fl-filter-gray --chevron-down"
+                      />
+                    </label>
+                    <select class="fl-form-control --w-fit --appearance-none">
+                      <option>Việt Nam</option>
+                      <option>Singapore</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-form-group d-flex flex--space-between fl-mb24">
+                <div>
+                  <label>Hành lý ký gửi</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-mb30">
+              <div class="radio checkbox fl-mb0">
+                <label class="radio__item fl-fw-medium fl-fs16"
+                  >Tôi muốn xuất hóa đơn
+                  <input type="checkbox" value="1" />
+                  <span class="checkmark card5"></span
+                ></label>
+              </div>
+            </div>
+
+            <div class="fl-card fl-checkout-card">
+              <div class="fl-checkout-card__header fl-mb24">
+                <div class="--title">Nội dung xuất hóa đơn</div>
+              </div>
+
+              <div class="fl-form-group">
+                <label>Tên đơn vị</label>
+                <input
+                  type="type"
+                  placeholder=""
+                  class="fl-form-control --w-fit"
+                />
+              </div>
+              <div class="fl-form-group">
+                <label>Mã số thuế</label>
+                <input
+                  type="type"
+                  placeholder=""
+                  class="fl-form-control --w-fit"
+                />
+              </div>
+              <div class="fl-form-group">
+                <label>Địa chỉ</label>
+                <input
+                  type="type"
+                  placeholder=""
+                  class="fl-form-control --w-fit"
+                />
+              </div>
+            </div>
+
+            <div class="fl-card fl-checkout-card">
+              <div class="fl-checkout-card__header">
+                <div class="--title">Thanh toán</div>
+              </div>
+
+              <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
+                <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                  >Chuyển khoản ngân hàng
+                  <input type="checkbox" value="1" />
+                  <span class="checkmark card5"></span
+                ></label>
+              </div>
+              <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
+                <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                  >Thanh toán trực tiếp tại văn phòng
+                  <input type="checkbox" value="1" />
+                  <span class="checkmark card5"></span
+                ></label>
+              </div>
+              <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
+                <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                  >Thanh toán trực tuyến
+                  <input type="checkbox" value="1" />
+                  <span class="checkmark card5"></span
+                ></label>
+              </div>
+              <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
+                <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                  >Thanh toán bằng ví Momo/Zalopay/...
+                  <input type="checkbox" value="1" />
+                  <span class="checkmark card5"></span
+                ></label>
+              </div>
+            </div>
+
+            <div class="fl-mb30">
+              <div class="radio checkbox fl-mb0">
+                <label class="radio__item fl-fw-medium fl-fs16"
+                  >Tôi chấp nhận các điều khoản đặt chỗ của website
+                  <input type="checkbox" value="1" />
+                  <span class="checkmark card5"></span
+                ></label>
+              </div>
+            </div>
+
+            <div class="fl-mb30">
+              <button
+                type="button"
+                class="fl-btn-primary fl-fs20 fl-fc-white fl-bar8 fl-h48 fl-w-fit"
+              >
+                Đặt dịch vụ
+              </button>
+            </div>
+          </div>
+          <div class="fl-sidebar fl-card"></div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./javascript/bootstrap.min.js"></script>
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
