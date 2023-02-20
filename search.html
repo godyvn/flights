@@ -11,7 +11,7 @@
   <body>
     <div id="app-container">
       <!-- Search Box (S) -->
-      <div class="fl--bg-white">
+      <div class="fl-bg-white">
         <div class="fl-container">
           <div class="fl-search-box">
             <div class="fl-flight-type radio">
@@ -207,6 +207,7 @@
       <!-- Main Content (S) -->
       <div class="fl-main">
         <div class="fl-container d-flex">
+          <!-- Sidebar (S) -->
           <div class="fl-sidebar">
             <!-- Price Filter (S) -->
             <div class="fl-card">
@@ -295,16 +296,17 @@
             </div>
             <!-- Flight Filter (E) -->
           </div>
+          <!-- Sidebar (E) -->
+
+          <!-- Primary (S) -->
           <div class="fl-primary">
+            <!-- Flights List (S) -->
             <div class="fl-flights">
-              <!-- Flight header (S) -->
               <div class="fl-flight-header">
                 <p>Chuyến bay từ Sài Gòn đến Hà Nội: 28/12/2022</p>
                 <span>1235 chuyến bay</span>
               </div>
-              <!-- Flight header (E) -->
 
-              <!-- Flight list date (S) -->
               <div class="fl-date d-flex">
                 <div class="d-flex flex--center date-list">
                   <div class="date-arrow">
@@ -350,12 +352,12 @@
                   <img src="./images/calendar-outline.svg" alt="calendar" />
                 </div>
               </div>
-              <!-- Flight list date (E) -->
 
+              <!-- Sort (S) -->
               <div class="d-flex flex--vertical-center fl-mb25">
                 <label class="fl-mr16">Sắp xếp theo</label>
                 <button
-                  class="btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16"
+                  class="btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16 fl-h:bg-primary"
                   type="button"
                 >
                   Đề xuất
@@ -364,7 +366,7 @@
                   <li role="presentation" class="dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
                       id="drop4"
                       data-toggle="dropdown"
                       role="button"
@@ -378,17 +380,14 @@
                       id="menu1"
                       aria-labelledby="drop4"
                     >
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">Giá thấp đến cao</a></li>
+                      <li><a href="#">Giá cao đến thấp</a></li>
                     </ul>
                   </li>
                   <li role="presentation" class="dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
                       id="drop5"
                       data-toggle="dropdown"
                       role="button"
@@ -402,17 +401,14 @@
                       id="menu2"
                       aria-labelledby="drop5"
                     >
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">Sớm nhất</a></li>
+                      <li><a href="#">Muộn nhất</a></li>
                     </ul>
                   </li>
                   <li role="presentation" class="dropdown">
                     <a
                       href="#"
-                      class="dropdown-toggle"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
                       id="drop6"
                       data-toggle="dropdown"
                       role="button"
@@ -426,104 +422,893 @@
                       id="menu3"
                       aria-labelledby="drop6"
                     >
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">Sớm nhất</a></li>
+                      <li><a href="#">Muộn nhất</a></li>
                     </ul>
                   </li>
                 </ul>
               </div>
-              <div class="fl-bar8">
-                <div>
-                  <div class="d-flex flex--space-between">
-                    <div>
-                      <img src="" alt="VNA" />
+              <!-- Sort (E) -->
+
+              <div>
+                <!-- Itinerary (S) -->
+                <div class="fl-flight-info-wrap">
+                  <div class="d-flex flex--space-between fl-p20">
+                    <div class="flight-info-airline">
+                      <img
+                        src="./images/vnairline.png"
+                        alt="VNA"
+                        class="airline-logo"
+                      />
                       <div>
-                        <p>Vietnam Airline</p>
-                        <p>VN7220</p>
+                        <div class="airline-name">Vietnam Airline</div>
+                        <div class="airline-info">VN7220</div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex--vertical-center">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-stop__code">SGN</div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-stop__line"></div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">09:10</div>
+                        <div class="flight-info-stop__code">HAN</div>
                       </div>
                     </div>
                     <div>
-                      <div>
-                        <p>07:10</p>
-                        <p>SGN</p>
-                      </div>
-                      <div>arrow</div>
-                      <div>
-                        <p>07:10</p>
-                        <p>HAN</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
+                      <div class="flight-info-duration">
                         <img
                           src="./images/time-outline.svg"
-                          class="w-18"
-                          width="18"
+                          class="flight-info-duration__clock"
                         />
-                        <span>1h</span>
+                        <span class="flight-info-duration__timer">1h</span>
                       </div>
                       <a
-                        class="btn btn-primary"
+                        class="btn btn-flight-info"
                         role="button"
                         data-toggle="collapse"
-                        href="#collapseExample"
+                        href="#flightInfo1"
                         aria-expanded="false"
-                        aria-controls="collapseExample"
+                        aria-controls="flightInfo1"
                       >
                         Thông tin chuyến bay
+                        <img
+                          src="./images/chevron-down-outline.svg"
+                          alt="arrow"
+                        />
                       </a>
                     </div>
-                    <div>
-                      <p>1.150.000đ</p>
-                      <button type="button">Chọn</button>
+                    <div class="d-flex flex--center">
+                      <div class="flight-info-price">1.150.000đ</div>
+                      <button
+                        type="button"
+                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                      >
+                        Chọn
+                      </button>
                     </div>
                   </div>
-                  <div class="collapse" id="collapseExample">
-                    <div class="well">
-                      <div>
-                        <div>
-                          <p>Ngày 8 tháng 12</p>
-                          <p>07:10</p>
+                  <div class="collapse flight-info-details" id="flightInfo1">
+                    <div class="d-flex fl-py20">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
                         </div>
-                        <div>
-                          <img
-                            src="./images/time-outline.svg"
-                            class="w-18"
-                            width="18"
-                          />
-                          <span>1h</span>
-                        </div>
-                        <div>
-                          <p>Ngày 8 tháng 12</p>
-                          <p>07:10</p>
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
                         </div>
                       </div>
+
+                      <div class="fl-mr20">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-duration">
+                          <img
+                            src="./images/time-outline.svg"
+                            class="flight-info-duration__clock"
+                          />
+                          <span class="flight-info-duration__timer">1h</span>
+                        </div>
+                        <div class="flight-info-airline__timer">07:10</div>
+                      </div>
+
+                      <div class="flight-info-stop__line"></div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="flight-info-stop__code">SGN</div>
+                        <div>
+                          <img
+                            src="./images/vnairline.png"
+                            alt="VNA"
+                            class="airline-logo"
+                          />
+                        </div>
+                        <div class="flight-info-stop__code">VNA</div>
+                      </div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Tân Sơn Nhất
+                        </div>
+                        <div class="fl-fc-gray-100">VN7220 Vietnam Airline</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Nội Bài
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          TP. Hồ Chí Minh
+                        </div>
+                        <div class="fl-fc-gray-100">Airbus7220</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Hà Nội
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fl-py20 fl-bt fl-bc-gray-500">
+                      <b>Điều kiện vé &amp; Hành lý</b>
+                      <ul>
+                        <li>
+                          Thay đổi tên hành khách: thu phí đổi 450,000 + chênh
+                          lệch giá vé (nếu có)/chiều di chuyển;
+                        </li>
+                        <li>
+                          Thay đổi chuyến bay:&nbsp;Thu phí thay đổi 450.000
+                          đồng + chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi ngày bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi chặng bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Nâng hạng: Thu phí thay đổi 450.000 đồng + chênh lệch
+                          giá vé (nếu có);
+                        </li>
+                        <li>
+                          Không cho phép bảo lưu vé, hoàn hủy vé; được phép mang
+                          thêm 7kg hành lý xách tay và không miễn phí hành lý ký
+                          gửi.
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="d-flex flex--space-between fl-py20 fl-bt fl-bc-gray-500"
+                    >
                       <div>
-                        <div>
-                          <p>SGN</p>
-                          <p>Sân bay Tân Sơn Nhất</p>
-                          <p>TP.Hồ Chí Minh</p>
+                        <div class="fl-fw-semibold fl-mb5">Hành khách</div>
+                        <div class="fl-mb5">Người lớn</div>
+                        <div class="">Trẻ em</div>
+                      </div>
+                      <div class="fl-ta-center">
+                        <div class="fl-fw-semibold fl-mb5">Số lượng</div>
+                        <div class="fl-mb5">1</div>
+                        <div class="">1</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">
+                          Giá vé gồm thuế phí
                         </div>
-                        <div>
-                          <p>VNA</p>
-                          <p>VN7220 Vietnam Airline</p>
-                          <p>Airbus7220</p>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">Tổng giá</div>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex--horizontal-end fl-py20 fl-bt fl-bc-gray-500 fl-fs16 fl-fw-medium"
+                    >
+                      <div class="fl-fc-gray fl-mr16">Tổng chi phí:</div>
+                      <div class="fl-fc-red">7.000.000đ</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Itinerary (E) -->
+
+                <!-- Itinerary (S) -->
+                <div class="fl-flight-info-wrap">
+                  <div class="d-flex flex--space-between fl-p20">
+                    <div class="flight-info-airline">
+                      <img
+                        src="./images/vnairline.png"
+                        alt="VNA"
+                        class="airline-logo"
+                      />
+                      <div>
+                        <div class="airline-name">Vietnam Airline</div>
+                        <div class="airline-info">VN7220</div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex--vertical-center">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-stop__code">SGN</div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-stop__line"></div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">09:10</div>
+                        <div class="flight-info-stop__code">HAN</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flight-info-duration">
+                        <img
+                          src="./images/time-outline.svg"
+                          class="flight-info-duration__clock"
+                        />
+                        <span class="flight-info-duration__timer">1h</span>
+                      </div>
+                      <a
+                        class="btn btn-flight-info"
+                        role="button"
+                        data-toggle="collapse"
+                        href="#flightInfo2"
+                        aria-expanded="false"
+                        aria-controls="flightInfo2"
+                      >
+                        Thông tin chuyến bay
+                        <img
+                          src="./images/chevron-down-outline.svg"
+                          alt="arrow"
+                        />
+                      </a>
+                    </div>
+                    <div class="d-flex flex--center">
+                      <div class="flight-info-price">1.150.000đ</div>
+                      <button
+                        type="button"
+                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                      >
+                        Chọn
+                      </button>
+                    </div>
+                  </div>
+                  <div class="collapse flight-info-details" id="flightInfo2">
+                    <div class="d-flex fl-py20">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
                         </div>
-                        <div>
-                          <p>HAN</p>
-                          <p>Sân bay Nội Bài</p>
-                          <p>Hà Nội</p>
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
                         </div>
+                      </div>
+
+                      <div class="fl-mr20">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-duration">
+                          <img
+                            src="./images/time-outline.svg"
+                            class="flight-info-duration__clock"
+                          />
+                          <span class="flight-info-duration__timer">1h</span>
+                        </div>
+                        <div class="flight-info-airline__timer">07:10</div>
+                      </div>
+
+                      <div class="flight-info-stop__line"></div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="flight-info-stop__code">SGN</div>
+                        <div>
+                          <img
+                            src="./images/vnairline.png"
+                            alt="VNA"
+                            class="airline-logo"
+                          />
+                        </div>
+                        <div class="flight-info-stop__code">VNA</div>
+                      </div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Tân Sơn Nhất
+                        </div>
+                        <div class="fl-fc-gray-100">VN7220 Vietnam Airline</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Nội Bài
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          TP. Hồ Chí Minh
+                        </div>
+                        <div class="fl-fc-gray-100">Airbus7220</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Hà Nội
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fl-py20 fl-bt fl-bc-gray-500">
+                      <b>Điều kiện vé &amp; Hành lý</b>
+                      <ul>
+                        <li>
+                          Thay đổi tên hành khách: thu phí đổi 450,000 + chênh
+                          lệch giá vé (nếu có)/chiều di chuyển;
+                        </li>
+                        <li>
+                          Thay đổi chuyến bay:&nbsp;Thu phí thay đổi 450.000
+                          đồng + chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi ngày bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi chặng bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Nâng hạng: Thu phí thay đổi 450.000 đồng + chênh lệch
+                          giá vé (nếu có);
+                        </li>
+                        <li>
+                          Không cho phép bảo lưu vé, hoàn hủy vé; được phép mang
+                          thêm 7kg hành lý xách tay và không miễn phí hành lý ký
+                          gửi.
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="d-flex flex--space-between fl-py20 fl-bt fl-bc-gray-500"
+                    >
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">Hành khách</div>
+                        <div class="fl-mb5">Người lớn</div>
+                        <div class="">Trẻ em</div>
+                      </div>
+                      <div class="fl-ta-center">
+                        <div class="fl-fw-semibold fl-mb5">Số lượng</div>
+                        <div class="fl-mb5">1</div>
+                        <div class="">1</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">
+                          Giá vé gồm thuế phí
+                        </div>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">Tổng giá</div>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- Itinerary (E) -->
               </div>
             </div>
+            <!-- Flights List (E) -->
+
+            <!-- Flights List (S) -->
+            <div class="fl-flights">
+              <div class="fl-flight-header">
+                <p>Chuyến bay từ Sài Gòn đến Hà Nội: 28/12/2022</p>
+                <span>1235 chuyến bay</span>
+              </div>
+
+              <div class="fl-date d-flex">
+                <div class="d-flex flex--center date-list">
+                  <div class="date-arrow">
+                    <button type="button">
+                      <img
+                        src="./images/chevron-back-outline.svg"
+                        alt="arrow"
+                      />
+                    </button>
+                  </div>
+                  <div class="d-flex">
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
+                    </div>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
+                    </div>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
+                    </div>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
+                    </div>
+                    <div class="date-item">
+                      <p class="date">01/01 - 06/06</p>
+                      <p class="price">2.549.000đ</p>
+                    </div>
+                  </div>
+                  <div class="date-arrow">
+                    <button type="button">
+                      <img
+                        src="./images/chevron-forward-outline.svg"
+                        alt="arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="date-calendar d-flex flex--center">
+                  <img src="./images/calendar-outline.svg" alt="calendar" />
+                </div>
+              </div>
+
+              <!-- Sort (S) -->
+              <div class="d-flex flex--vertical-center fl-mb25">
+                <label class="fl-mr16">Sắp xếp theo</label>
+                <button
+                  class="btn-primary fl-h32 fl-px18 fl-bar4 fl-mr16 fl-h:bg-primary"
+                  type="button"
+                >
+                  Đề xuất
+                </button>
+                <ul class="nav nav-pills" role="tablist">
+                  <li role="presentation" class="dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      id="drop4"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="true"
+                    >
+                      Giá thấp đến cao <span class="caret"></span>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      id="menu1"
+                      aria-labelledby="drop4"
+                    >
+                      <li><a href="#">Giá thấp đến cao</a></li>
+                      <li><a href="#">Giá cao đến thấp</a></li>
+                    </ul>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      id="drop5"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Thời gian bay <span class="caret"></span>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      id="menu2"
+                      aria-labelledby="drop5"
+                    >
+                      <li><a href="#">Sớm nhất</a></li>
+                      <li><a href="#">Muộn nhất</a></li>
+                    </ul>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                    <a
+                      href="#"
+                      class="dropdown-toggle fl-bg-white fl-py6 fl-bar4 fl-mr16 fl-h:bg-primary fl-h:fc-white"
+                      id="drop6"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Thời gian đến <span class="caret"></span>
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      id="menu3"
+                      aria-labelledby="drop6"
+                    >
+                      <li><a href="#">Sớm nhất</a></li>
+                      <li><a href="#">Muộn nhất</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Sort (E) -->
+
+              <div>
+                <!-- Itinerary (S) -->
+                <div class="fl-flight-info-wrap">
+                  <div class="d-flex flex--space-between fl-p20">
+                    <div class="flight-info-airline">
+                      <img
+                        src="./images/vnairline.png"
+                        alt="VNA"
+                        class="airline-logo"
+                      />
+                      <div>
+                        <div class="airline-name">Vietnam Airline</div>
+                        <div class="airline-info">VN7220</div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex--vertical-center">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-stop__code">SGN</div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-stop__line"></div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">09:10</div>
+                        <div class="flight-info-stop__code">HAN</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flight-info-duration">
+                        <img
+                          src="./images/time-outline.svg"
+                          class="flight-info-duration__clock"
+                        />
+                        <span class="flight-info-duration__timer">1h</span>
+                      </div>
+                      <a
+                        class="btn btn-flight-info"
+                        role="button"
+                        data-toggle="collapse"
+                        href="#flightInfo1"
+                        aria-expanded="false"
+                        aria-controls="flightInfo1"
+                      >
+                        Thông tin chuyến bay
+                        <img
+                          src="./images/chevron-down-outline.svg"
+                          alt="arrow"
+                        />
+                      </a>
+                    </div>
+                    <div class="d-flex flex--center">
+                      <div class="flight-info-price">1.150.000đ</div>
+                      <button
+                        type="button"
+                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                      >
+                        Chọn
+                      </button>
+                    </div>
+                  </div>
+                  <div class="collapse flight-info-details" id="flightInfo1">
+                    <div class="d-flex fl-py20">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
+                        </div>
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
+                        </div>
+                      </div>
+
+                      <div class="fl-mr20">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-duration">
+                          <img
+                            src="./images/time-outline.svg"
+                            class="flight-info-duration__clock"
+                          />
+                          <span class="flight-info-duration__timer">1h</span>
+                        </div>
+                        <div class="flight-info-airline__timer">07:10</div>
+                      </div>
+
+                      <div class="flight-info-stop__line"></div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="flight-info-stop__code">SGN</div>
+                        <div>
+                          <img
+                            src="./images/vnairline.png"
+                            alt="VNA"
+                            class="airline-logo"
+                          />
+                        </div>
+                        <div class="flight-info-stop__code">VNA</div>
+                      </div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Tân Sơn Nhất
+                        </div>
+                        <div class="fl-fc-gray-100">VN7220 Vietnam Airline</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Nội Bài
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          TP. Hồ Chí Minh
+                        </div>
+                        <div class="fl-fc-gray-100">Airbus7220</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Hà Nội
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fl-py20 fl-bt fl-bc-gray-500">
+                      <b>Điều kiện vé &amp; Hành lý</b>
+                      <ul>
+                        <li>
+                          Thay đổi tên hành khách: thu phí đổi 450,000 + chênh
+                          lệch giá vé (nếu có)/chiều di chuyển;
+                        </li>
+                        <li>
+                          Thay đổi chuyến bay:&nbsp;Thu phí thay đổi 450.000
+                          đồng + chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi ngày bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi chặng bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Nâng hạng: Thu phí thay đổi 450.000 đồng + chênh lệch
+                          giá vé (nếu có);
+                        </li>
+                        <li>
+                          Không cho phép bảo lưu vé, hoàn hủy vé; được phép mang
+                          thêm 7kg hành lý xách tay và không miễn phí hành lý ký
+                          gửi.
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="d-flex flex--space-between fl-py20 fl-bt fl-bc-gray-500"
+                    >
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">Hành khách</div>
+                        <div class="fl-mb5">Người lớn</div>
+                        <div class="">Trẻ em</div>
+                      </div>
+                      <div class="fl-ta-center">
+                        <div class="fl-fw-semibold fl-mb5">Số lượng</div>
+                        <div class="fl-mb5">1</div>
+                        <div class="">1</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">
+                          Giá vé gồm thuế phí
+                        </div>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">Tổng giá</div>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex--horizontal-end fl-py20 fl-bt fl-bc-gray-500 fl-fs16 fl-fw-medium"
+                    >
+                      <div class="fl-fc-gray fl-mr16">Tổng chi phí:</div>
+                      <div class="fl-fc-red">7.000.000đ</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Itinerary (E) -->
+
+                <!-- Itinerary (S) -->
+                <div class="fl-flight-info-wrap">
+                  <div class="d-flex flex--space-between fl-p20">
+                    <div class="flight-info-airline">
+                      <img
+                        src="./images/vnairline.png"
+                        alt="VNA"
+                        class="airline-logo"
+                      />
+                      <div>
+                        <div class="airline-name">Vietnam Airline</div>
+                        <div class="airline-info">VN7220</div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex--vertical-center">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-stop__code">SGN</div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-stop__line"></div>
+                      </div>
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__timer">09:10</div>
+                        <div class="flight-info-stop__code">HAN</div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flight-info-duration">
+                        <img
+                          src="./images/time-outline.svg"
+                          class="flight-info-duration__clock"
+                        />
+                        <span class="flight-info-duration__timer">1h</span>
+                      </div>
+                      <a
+                        class="btn btn-flight-info"
+                        role="button"
+                        data-toggle="collapse"
+                        href="#flightInfo2"
+                        aria-expanded="false"
+                        aria-controls="flightInfo2"
+                      >
+                        Thông tin chuyến bay
+                        <img
+                          src="./images/chevron-down-outline.svg"
+                          alt="arrow"
+                        />
+                      </a>
+                    </div>
+                    <div class="d-flex flex--center">
+                      <div class="flight-info-price">1.150.000đ</div>
+                      <button
+                        type="button"
+                        class="btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
+                      >
+                        Chọn
+                      </button>
+                    </div>
+                  </div>
+                  <div class="collapse flight-info-details" id="flightInfo2">
+                    <div class="d-flex fl-py20">
+                      <div class="flight-info-stop">
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
+                        </div>
+                        <div class="flight-info-airline__date">
+                          Ngày 8 tháng 12
+                        </div>
+                      </div>
+
+                      <div class="fl-mr20">
+                        <div class="flight-info-airline__timer">07:10</div>
+                        <div class="flight-info-duration">
+                          <img
+                            src="./images/time-outline.svg"
+                            class="flight-info-duration__clock"
+                          />
+                          <span class="flight-info-duration__timer">1h</span>
+                        </div>
+                        <div class="flight-info-airline__timer">07:10</div>
+                      </div>
+
+                      <div class="flight-info-stop__line"></div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="flight-info-stop__code">SGN</div>
+                        <div>
+                          <img
+                            src="./images/vnairline.png"
+                            alt="VNA"
+                            class="airline-logo"
+                          />
+                        </div>
+                        <div class="flight-info-stop__code">VNA</div>
+                      </div>
+
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Tân Sơn Nhất
+                        </div>
+                        <div class="fl-fc-gray-100">VN7220 Vietnam Airline</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Sân bay Nội Bài
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex fl-fd-column flex--space-between fl-mr20"
+                      >
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          TP. Hồ Chí Minh
+                        </div>
+                        <div class="fl-fc-gray-100">Airbus7220</div>
+                        <div class="fl-fc-gray fl-fw-semibold fl-fs-16">
+                          Hà Nội
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fl-py20 fl-bt fl-bc-gray-500">
+                      <b>Điều kiện vé &amp; Hành lý</b>
+                      <ul>
+                        <li>
+                          Thay đổi tên hành khách: thu phí đổi 450,000 + chênh
+                          lệch giá vé (nếu có)/chiều di chuyển;
+                        </li>
+                        <li>
+                          Thay đổi chuyến bay:&nbsp;Thu phí thay đổi 450.000
+                          đồng + chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi ngày bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Thay đổi chặng bay: Thu phí thay đổi 450.000 đồng +
+                          chênh lệch giá vé (nếu có);
+                        </li>
+                        <li>
+                          Nâng hạng: Thu phí thay đổi 450.000 đồng + chênh lệch
+                          giá vé (nếu có);
+                        </li>
+                        <li>
+                          Không cho phép bảo lưu vé, hoàn hủy vé; được phép mang
+                          thêm 7kg hành lý xách tay và không miễn phí hành lý ký
+                          gửi.
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="d-flex flex--space-between fl-py20 fl-bt fl-bc-gray-500"
+                    >
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">Hành khách</div>
+                        <div class="fl-mb5">Người lớn</div>
+                        <div class="">Trẻ em</div>
+                      </div>
+                      <div class="fl-ta-center">
+                        <div class="fl-fw-semibold fl-mb5">Số lượng</div>
+                        <div class="fl-mb5">1</div>
+                        <div class="">1</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">
+                          Giá vé gồm thuế phí
+                        </div>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
+                      </div>
+                      <div>
+                        <div class="fl-fw-semibold fl-mb5">Tổng giá</div>
+                        <div class="fl-mb5 fl-fc-red">5.000.000đ</div>
+                        <div class="fl-fc-red">2.000.000đ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Itinerary (E) -->
+              </div>
+            </div>
+            <!-- Flights List (E) -->
           </div>
+          <!-- Primary (E) -->
         </div>
       </div>
       <!-- Main Content (E) -->

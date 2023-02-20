@@ -213,6 +213,7 @@ body {
 }
 
 .fl-flights {
+  margin-bottom: 60px;
   .fl-flight-header {
     color: var(--fl-gray);
     margin-bottom: 24px;
@@ -240,16 +241,19 @@ body {
     .date-item {
       box-shadow: $box-shadow-1;
       padding: 8px 12px;
+      text-align: center;
       .date {
         color: var(--fl-gray);
         line-height: 15px;
         margin-bottom: 10px;
         white-space: nowrap;
+        font-weight: var(--fl-fw-medium);
       }
       .price {
         color: var(--fl-primary);
         line-height: 15px;
         margin-bottom: 0;
+        font-weight: var(--fl-fw-semibold);
       }
     }
     .date-arrow {
@@ -275,6 +279,170 @@ body {
         width: 28px;
         height: 28px;
         filter: $filter-primary;
+      }
+    }
+  }
+}
+
+.fl-flight-info-wrap {
+  background: #fff;
+  border: 1px solid var(--fl-gray-500);
+  &:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+  &:not(:last-child) {
+    border-bottom: 0;
+  }
+  .flight-info-airline {
+    display: flex;
+    align-items: center;
+    .airline-logo {
+      height: 32px;
+      width: 32px;
+      margin-right: 14px;
+      border-radius: 4px;
+    }
+    .airline-name {
+      color: var(--fl-black);
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: var(--fl-fw-medium);
+    }
+    .airline-info {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: var(--fl-gray-100);
+    }
+  }
+  .flight-info-stop {
+    position: relative;
+    .flight-info-airline__timer {
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: var(--fl-fw-semibold);
+      color: var(--fl-gray);
+    }
+    .flight-info-stop__code {
+      margin-bottom: 0;
+      font-size: 16px;
+      color: var(--fl-gray-100);
+    }
+    .flight-info-stop__line {
+      margin: 0 11px;
+      width: 71.5px;
+      height: 0px;
+      border: 1px solid var(--fl-gray-500);
+      margin-top: -9px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        border: 1px solid var(--fl-gray-500);
+        position: absolute;
+        right: 4px;
+        bottom: -2px;
+        height: 12px;
+        transform: rotate(-52deg);
+      }
+    }
+  }
+  .flight-info-duration {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    &__clock {
+      filter: $filter-gray-100;
+      width: 18px;
+      margin-top: 2px;
+      margin-right: 5px;
+    }
+    &__timer {
+      font-size: 18px;
+      color: var(--fl-gray-100);
+    }
+  }
+  .btn-flight-info {
+    font-size: 12px;
+    color: var(--fl-primary);
+    padding: 0;
+    box-shadow: none;
+    img {
+      filter: $filter-primary;
+      margin-left: 3px;
+      width: 14px;
+    }
+  }
+  .flight-info-price {
+    font-size: 20px;
+    color: var(--fl-red);
+    font-weight: var(--fl-fw-semibold);
+    margin-right: 20px;
+  }
+  .flight-info-details {
+    border-top: 1px solid var(--fl-gray-500);
+    padding: 0 30px;
+    // padding: 20px 30px;
+    // display: flex;
+    .flight-info-stop {
+      margin-right: 20px;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+    }
+    .flight-info-airline__date {
+      font-size: 14px;
+      color: var(--fl-gray-100);
+    }
+    .flight-info-airline__timer {
+      font-size: 16px;
+      font-weight: var(--fl-fw-semibold);
+    }
+    .flight-info-duration {
+      margin: 6px 0;
+      &__clock {
+        width: 16px;
+      }
+      &__timer {
+        font-size: 16px;
+      }
+    }
+    .airline-logo {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+    }
+    .flight-info-stop__code {
+      font-size: 16px;
+      font-weight: var(--fl-fw-semibold);
+    }
+    .flight-info-stop__line {
+      border: 1px solid var(--fl-gray-500);
+      margin: 10px 20px 10px 0;
+      position: relative;
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: var(--fl-d9);
+        position: absolute;
+        left: -3px;
+      }
+      &:before {
+        top: -3px;
+      }
+      &:after {
+        bottom: -3px;
+      }
+    }
+    ul {
+      margin-top: 12px;
+      margin-bottom: 0;
+      padding-left: 16px;
+      li {
+        margin-bottom: 5px;
       }
     }
   }

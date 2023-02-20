@@ -11,6 +11,7 @@
   --fl-background-f9: #f9f9f9;
   --fl-background: #faf1ec;
   --fl-background-f8: #f8f8f8;
+  --fl-d9: #d9d9d9;
   --fl-font-stack: 'SVN-Gilroy', Helvetica, sans-serif;
   --fl-fw-medium: 500;
   --fl-fw-semibold: 600;
@@ -22,3 +23,5 @@ $filter-primary: invert(58%) sepia(9%) saturate(6493%) hue-rotate(359deg)
   brightness(101%) contrast(103%);
 $filter-white: invert(100%) sepia(0%) saturate(0%) hue-rotate(153deg)
   brightness(114%) contrast(101%);
+$filter-gray-100: invert(59%) sepia(0%) saturate(1298%) hue-rotate(142deg)
+  brightness(86%) contrast(90%);

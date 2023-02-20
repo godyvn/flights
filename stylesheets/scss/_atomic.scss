@@ -89,10 +89,55 @@
   margin: 0 auto;
 }
 
-.fl--bg-white {
+/* Background (S) */
+.fl-bg-white {
   background-color: #ffffff;
 }
 
+.fl-h\:bg-primary:hover {
+  background-color: var(--fl-primary) !important;
+}
+/* Background (E) */
+
+/* Border (S) */
+.fl-bt {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+.fl-bc-gray-500 {
+  border-color: var(--fl-gray-500);
+}
+.fl-bar4 {
+  border-radius: 4px;
+}
+
+.fl-bar8 {
+  border-radius: 8px;
+}
+/* Border (E) */
+
+/* Color */
+.fl-fc-white {
+  color: #fff;
+}
+
+.fl-h\:fc-white:hover {
+  color: #fff !important;
+}
+
+.fl-fc-gray {
+  color: var(--fl-gray);
+}
+
+.fl-fc-gray-100 {
+  color: var(--fl-gray-100);
+}
+
+.fl-fc-red {
+  color: var(--fl-red);
+}
+
+/* Display (S) */
 .d-flex {
   display: flex;
 }
@@ -117,6 +162,46 @@
   justify-content: space-between;
 }
 
+.fl-fd-column {
+  flex-direction: column;
+}
+/* Display (E) */
+
+/* Font */
+.fl-fs12 {
+  font-size: 12px;
+}
+
+.fl-fs14 {
+  font-size: 14px;
+}
+
+.fl-fs16 {
+  font-size: 16px;
+}
+
+.fl-fs18 {
+  font-size: 18px;
+}
+
+.fl-fs20 {
+  font-size: 20px;
+}
+
+.fl-fw-medium {
+  font-weight: var(--fl-fw-medium);
+}
+
+.fl-fw-semibold {
+  font-weight: var(--fl-fw-semibold);
+}
+
+/* Filter */
+.filter-gray-100 {
+  filter: $filter-gray-100;
+}
+
+/* Layout */
 .fl-col-6 {
   width: 50%;
 }
@@ -128,21 +213,72 @@
   color: #fff;
 }
 
+/* Height */
 .fl-h32 {
   height: 32px;
 }
 
+/* Spacing (S) */
+.fl-py6 {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
 .fl-px18 {
   padding-left: 18px;
   padding-right: 18px;
+}
+.fl-p20 {
+  padding: 20px;
+}
+.fl-py20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.fl-px24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.fl-px30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.fl-mb0 {
+  margin-bottom: 0;
+}
+
+.fl-mb5 {
+  margin-bottom: 5px;
+}
+
+.fl-mr14 {
+  margin-right: 14px;
 }
 
 .fl-mr16 {
   margin-right: 16px;
 }
 
-.fl-bar4 {
-  border-radius: 4px;
+.fl-mr20 {
+  margin-right: 20px;
+}
+
+.fl-mb25 {
+  margin-bottom: 25px;
+}
+
+.fl-mt60 {
+  margin-top: 60px;
+}
+/* Spacing (E) */
+
+/* Width */
+.fl-w18 {
+  width: 18px;
+}
+
+.fl-w32 {
+  width: 32px;
 }
 
 .fl-card {
@@ -164,10 +300,6 @@
   }
 }
 
-.fl-mb25 {
-  margin-bottom: 25px;
-}
-
-.fl-bar8 {
-  border-radius: 8px;
+.fl-ta-center {
+  text-align: center;
 }
