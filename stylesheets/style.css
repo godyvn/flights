@@ -269,6 +269,10 @@
   filter: invert(59%) sepia(0%) saturate(1298%) hue-rotate(142deg) brightness(86%) contrast(90%);
 }
 
+.fl-filter-primary {
+  filter: invert(72%) sepia(91%) saturate(4304%) hue-rotate(3deg) brightness(105%) contrast(104%);
+}
+
 /* Layout */
 .fl-col-6 {
   width: 50%;
@@ -348,6 +352,10 @@
 
 .fl-mb5 {
   margin-bottom: 5px;
+}
+
+.fl-mr8 {
+  margin-right: 8px;
 }
 
 .fl-mb12 {
@@ -689,7 +697,7 @@ body {
 .fl-search-page .fl-flights .fl-date .date-calendar img {
   width: 28px;
   height: 28px;
-  filter: invert(58%) sepia(9%) saturate(6493%) hue-rotate(359deg) brightness(101%) contrast(103%);
+  filter: invert(72%) sepia(91%) saturate(4304%) hue-rotate(3deg) brightness(105%) contrast(104%);
 }
 .fl-search-page .fl-flight-info-wrap {
   background: #fff;
@@ -747,12 +755,13 @@ body {
 .fl-search-page .fl-flight-info-wrap .flight-info-stop .flight-info-stop__line:after {
   content: "";
   display: block;
-  border: 1px solid var(--fl-gray-500);
+  border-top: 2px solid var(--fl-gray-500);
   position: absolute;
-  right: 4px;
-  bottom: -2px;
+  right: 2px;
+  bottom: -7px;
   height: 12px;
-  transform: rotate(-52deg);
+  width: 12px;
+  transform: rotate(32deg);
 }
 .fl-search-page .fl-flight-info-wrap .flight-info-duration {
   display: flex;
@@ -776,7 +785,7 @@ body {
   box-shadow: none;
 }
 .fl-search-page .fl-flight-info-wrap .btn-flight-info img {
-  filter: invert(58%) sepia(9%) saturate(6493%) hue-rotate(359deg) brightness(101%) contrast(103%);
+  filter: invert(72%) sepia(91%) saturate(4304%) hue-rotate(3deg) brightness(105%) contrast(104%);
   margin-left: 3px;
   width: 14px;
 }
@@ -852,8 +861,50 @@ body {
   margin-bottom: 5px;
 }
 
+.fl-checkout-page .fl-primary {
+  padding-left: 0;
+}
 .fl-checkout-page .fl-sidebar {
   width: 330px;
+  flex-shrink: 0;
+  border: 1px solid var(--fl-gray-500);
+}
+.fl-checkout-page .fl-sidebar .city-wrap .city-name {
+  color: var(--fl-primary);
+  font-size: 16px;
+  font-weight: var(--fl-fw-medium);
+  line-height: 17px;
+}
+.fl-checkout-page .fl-sidebar .city-wrap .roundtrip {
+  border: 1px solid var(--fl-gray-500);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: relative;
+  height: 10px;
+  width: 42px;
+  margin: 0 12px;
+}
+.fl-checkout-page .fl-sidebar .city-wrap .roundtrip:before {
+  content: "";
+  display: block;
+  border-top: 1px solid var(--fl-gray-500);
+  position: absolute;
+  right: 2px;
+  top: -4px;
+  height: 12px;
+  width: 8px;
+  transform: rotate(30deg);
+}
+.fl-checkout-page .fl-sidebar .city-wrap .roundtrip:after {
+  content: "";
+  display: block;
+  border-top: 1px solid var(--fl-gray-500);
+  position: absolute;
+  left: -4px;
+  bottom: -13px;
+  height: 12px;
+  width: 8px;
+  transform: rotate(-330deg);
 }
 .fl-checkout-page .fl-checkout-title {
   font-size: 36px;

@@ -223,6 +223,10 @@
   filter: $filter-gray-100;
 }
 
+.fl-filter-primary {
+  filter: $filter-primary;
+}
+
 /* Layout */
 .fl-col-6 {
   width: 50%;
@@ -291,6 +295,10 @@
 
 .fl-mb5 {
   margin-bottom: 5px;
+}
+
+.fl-mr8 {
+  margin-right: 8px;
 }
 
 .fl-mb12 {
