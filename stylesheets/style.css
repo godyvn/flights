@@ -719,17 +719,6 @@ body {
   margin-right: 14px;
   border-radius: 4px;
 }
-.fl-search-page .fl-flight-info-wrap .flight-info-airline .airline-name {
-  color: var(--fl-black);
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: var(--fl-fw-medium);
-}
-.fl-search-page .fl-flight-info-wrap .flight-info-airline .airline-info {
-  margin-bottom: 0;
-  font-size: 12px;
-  color: var(--fl-gray-100);
-}
 .fl-search-page .fl-flight-info-wrap .flight-info-stop {
   position: relative;
 }
@@ -738,11 +727,6 @@ body {
   font-size: 20px;
   font-weight: var(--fl-fw-semibold);
   color: var(--fl-gray);
-}
-.fl-search-page .fl-flight-info-wrap .flight-info-stop .flight-info-stop__code {
-  margin-bottom: 0;
-  font-size: 16px;
-  color: var(--fl-gray-100);
 }
 .fl-search-page .fl-flight-info-wrap .flight-info-stop .flight-info-stop__line {
   margin: 0 11px;
@@ -829,7 +813,7 @@ body {
 }
 .fl-search-page .fl-flight-info-wrap .flight-info-details .flight-info-stop__code {
   font-size: 16px;
-  font-weight: var(--fl-fw-semibold);
+  font-weight: var(--fl-fw-medium);
 }
 .fl-search-page .fl-flight-info-wrap .flight-info-details .flight-info-stop__line {
   border: 1px solid var(--fl-gray-500);
@@ -905,6 +889,16 @@ body {
   height: 12px;
   width: 8px;
   transform: rotate(-330deg);
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline {
+  padding: 30px 0 24px;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline__date {
+  color: var(--fl-gray);
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: var(--fl-fw-semibold);
+  margin-bottom: 8px;
 }
 .fl-checkout-page .fl-checkout-title {
   font-size: 36px;
@@ -988,6 +982,25 @@ body {
   padding: 0 12px;
   cursor: pointer;
   z-index: 0;
+}
+
+.airline-name {
+  color: var(--fl-black);
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: var(--fl-fw-medium);
+}
+
+.airline-info {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: var(--fl-gray-100);
+}
+
+.flight-info-stop__code {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: var(--fl-gray-100);
 }
 
 /*# sourceMappingURL=style.css.map */
