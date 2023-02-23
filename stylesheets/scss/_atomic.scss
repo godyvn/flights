@@ -108,6 +108,9 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
+.fl-bbs-dotted {
+  border-bottom-style: dotted;
+}
 .fl-bc-gray-500 {
   border-color: var(--fl-gray-500);
 }
@@ -162,15 +165,23 @@
   justify-content: center;
 }
 
-.flex--vertical-center {
+.flex--ai-start {
+  align-items: start;
+}
+
+.flex--ai-center {
   align-items: center;
 }
 
-.flex--horizontal-center {
+.flex--ai-baseline {
+  align-items: baseline;
+}
+
+.flex--jc-center {
   justify-content: center;
 }
 
-.flex--horizontal-end {
+.flex--jc-end {
   justify-content: end;
 }
 .flex--space-between {
@@ -289,6 +300,10 @@
   padding-right: 30px;
 }
 
+.fl-mtn9 {
+  margin-top: -9px;
+}
+
 .fl-mb0 {
   margin-bottom: 0 !important;
 }
@@ -299,6 +314,10 @@
 
 .fl-mr8 {
   margin-right: 8px;
+}
+
+.fl-mb10 {
+  margin-bottom: 10px;
 }
 
 .fl-mb12 {
@@ -331,6 +350,10 @@
 
 .fl-mr20 {
   margin-right: 20px;
+}
+
+.fl-mb20 {
+  margin-bottom: 20px;
 }
 
 .fl-mb24 {

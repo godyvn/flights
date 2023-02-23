@@ -151,6 +151,10 @@
   border-bottom-style: solid;
 }
 
+.fl-bbs-dotted {
+  border-bottom-style: dotted;
+}
+
 .fl-bc-gray-500 {
   border-color: var(--fl-gray-500);
 }
@@ -206,15 +210,23 @@
   justify-content: center;
 }
 
-.flex--vertical-center {
+.flex--ai-start {
+  align-items: start;
+}
+
+.flex--ai-center {
   align-items: center;
 }
 
-.flex--horizontal-center {
+.flex--ai-baseline {
+  align-items: baseline;
+}
+
+.flex--jc-center {
   justify-content: center;
 }
 
-.flex--horizontal-end {
+.flex--jc-end {
   justify-content: end;
 }
 
@@ -346,6 +358,10 @@
   padding-right: 30px;
 }
 
+.fl-mtn9 {
+  margin-top: -9px;
+}
+
 .fl-mb0 {
   margin-bottom: 0 !important;
 }
@@ -356,6 +372,10 @@
 
 .fl-mr8 {
   margin-right: 8px;
+}
+
+.fl-mb10 {
+  margin-bottom: 10px;
 }
 
 .fl-mb12 {
@@ -388,6 +408,10 @@
 
 .fl-mr20 {
   margin-right: 20px;
+}
+
+.fl-mb20 {
+  margin-bottom: 20px;
 }
 
 .fl-mb24 {
@@ -812,7 +836,6 @@ body {
   border-radius: 4px;
 }
 .fl-search-page .fl-flight-info-wrap .flight-info-details .flight-info-stop__code {
-  font-size: 16px;
   font-weight: var(--fl-fw-medium);
 }
 .fl-search-page .fl-flight-info-wrap .flight-info-details .flight-info-stop__line {
@@ -859,7 +882,7 @@ body {
   font-weight: var(--fl-fw-medium);
   line-height: 17px;
 }
-.fl-checkout-page .fl-sidebar .city-wrap .roundtrip {
+.fl-checkout-page .fl-sidebar .city-wrap .roundtrip-arrow {
   border: 1px solid var(--fl-gray-500);
   border-left-color: transparent;
   border-right-color: transparent;
@@ -868,7 +891,7 @@ body {
   width: 42px;
   margin: 0 12px;
 }
-.fl-checkout-page .fl-sidebar .city-wrap .roundtrip:before {
+.fl-checkout-page .fl-sidebar .city-wrap .roundtrip-arrow:before {
   content: "";
   display: block;
   border-top: 1px solid var(--fl-gray-500);
@@ -879,7 +902,7 @@ body {
   width: 8px;
   transform: rotate(30deg);
 }
-.fl-checkout-page .fl-sidebar .city-wrap .roundtrip:after {
+.fl-checkout-page .fl-sidebar .city-wrap .roundtrip-arrow:after {
   content: "";
   display: block;
   border-top: 1px solid var(--fl-gray-500);
@@ -899,6 +922,81 @@ body {
   line-height: 19px;
   font-weight: var(--fl-fw-semibold);
   margin-bottom: 8px;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline__timer {
+  color: var(--fl-gray);
+  font-size: 20px;
+  font-weight: var(--fl-fw-semibold);
+  line-height: 140%;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline .airline-logo {
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+  margin-right: 18px;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline .airline-info {
+  margin-left: 8px;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline .flight-info-duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline .flight-info-duration__clock {
+  width: 18px;
+  filter: invert(59%) sepia(0%) saturate(1298%) hue-rotate(142deg) brightness(86%) contrast(90%);
+  margin-top: -4px;
+  margin-right: 5px;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline .flight-info-duration__timer {
+  font-size: 18px;
+  color: var(--fl-gray-100);
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline .brand-amenity-value__icon {
+  width: 18px;
+  margin-right: 7px;
+}
+.fl-checkout-page .fl-sidebar .flight-info-airline .brand-amenity-value .--item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.fl-checkout-page .fl-sidebar .flight-price .--title {
+  color: var(--fl-gray);
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: var(--fl-fw-semibold);
+  margin-bottom: 14px;
+}
+.fl-checkout-page .fl-sidebar .flight-price .--label {
+  color: var(--fl-gray-100);
+  font-size: 16px;
+  font-weight: var(--fl-fw-medium);
+  line-height: 17px;
+  margin-bottom: 14px;
+}
+.fl-checkout-page .fl-sidebar .flight-price .--value {
+  color: var(--fl-gray);
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: var(--fl-fw-semibold);
+}
+.fl-checkout-page .fl-sidebar .price-summary {
+  padding: 24px 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fl-checkout-page .fl-sidebar .price-summary .--label {
+  color: var(--fl-gray-100);
+  font-size: 16px;
+  font-weight: var(--fl-fw-medium);
+  line-height: 17px;
+}
+.fl-checkout-page .fl-sidebar .price-summary .--value {
+  color: var(--fl-primary);
+  font-size: 16px;
+  font-weight: var(--fl-fw-semibold);
+  line-height: 17px;
 }
 .fl-checkout-page .fl-checkout-title {
   font-size: 36px;
@@ -1001,6 +1099,56 @@ body {
   margin-bottom: 0;
   font-size: 16px;
   color: var(--fl-gray-100);
+}
+
+.oneway-arrow {
+  margin: 0 11px;
+  width: 71.5px;
+  height: 0px;
+  border: 1px solid var(--fl-gray-500);
+  position: relative;
+}
+.oneway-arrow:after {
+  content: "";
+  display: block;
+  border-top: 2px solid var(--fl-gray-500);
+  position: absolute;
+  right: 2px;
+  bottom: -7px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(32deg);
+}
+
+.voucher-input-wrapper {
+  background-color: var(--fl-background);
+  padding: 20px;
+}
+.voucher-input-wrapper .--title {
+  color: var(--fl-primary);
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: var(--fl-fw-medium);
+  margin-bottom: 8px;
+}
+.voucher-input-wrapper input {
+  background-color: #fff;
+  border: 1px solid var(--fl-gray-500);
+  border-radius: 8px;
+  height: 36px;
+  padding: 0 12px;
+  margin-right: 12px;
+  box-shadow: none;
+  outline: none;
+  width: calc(100% - 107px);
+}
+.voucher-input-wrapper button {
+  background-color: var(--fl-primary);
+  color: #fff;
+  height: 36px;
+  border: 0;
+  padding: 0 30px;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

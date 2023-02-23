@@ -11,12 +11,12 @@
   <body>
     <div id="app-container" class="fl-checkout-page fl-main">
       <form method="POST" action="">
-        <div class="fl-container d-flex">
+        <div class="fl-container d-flex flex--ai-start">
           <div class="fl-primary fl-mr30">
             <div class="fl-checkout-title">Vé máy bay</div>
             <div class="fl-card fl-checkout-card">
               <div
-                class="d-flex flex--space-between flex--vertical-center fl-checkout-card__header fl-mb24"
+                class="d-flex flex--space-between flex--ai-center fl-checkout-card__header fl-mb24"
               >
                 <div class="--title">Thông tin người đặt</div>
                 <button
@@ -254,9 +254,7 @@
           </div>
           <div class="fl-sidebar fl-card">
             <div class="fl-p20">
-              <div
-                class="d-flex flex--space-between city-wrap flex--vertical-center"
-              >
+              <div class="d-flex flex--space-between city-wrap flex--ai-center">
                 <div class="fl-mr8">
                   <img
                     src="./images/airplane.svg"
@@ -265,32 +263,32 @@
                     class="fl-filter-primary"
                   />
                 </div>
-                <div class="city-name">TP.Hồ Chí Minh</div>
-                <div class="roundtrip">
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="city-name">Đà Nẵng</div>
+                <div class="city-name fl-ta-center">TP.Hồ Chí Minh</div>
+                <div class="roundtrip-arrow"></div>
+                <div class="city-name fl-ta-center">Đà Nẵng</div>
               </div>
               <div class="flight-info-airline">
                 <div class="flight-info-airline__date">
                   Chuyến bay đi: 28/12/2022
                 </div>
-                <div class="d-flex flex--horizontal-end">
-                  <div>SGN</div>
-                  <div></div>
-                  <div>HAN</div>
+                <div class="d-flex flex--ai-baseline fl-mb20">
+                  <div class="flight-info-stop__code">SGN</div>
+                  <div class="oneway-arrow"></div>
+                  <div class="flight-info-stop__code">HAN</div>
                 </div>
-                <div class="d-flex">
-                  <div>
-                    <img src="./images/vnairline.png" />
-                  </div>
-                  <div>
-                    <div>07:10 - 8:10</div>
-                    <div class="airline-name">
-                      Vietnam Airline <span class="airline-info">VN7220</span>
+                <div class="d-flex flex--ai-center flex--space-between fl-mb25">
+                  <div class="d-flex flex--ai-center">
+                    <div>
+                      <img src="./images/vnairline.png" class="airline-logo" />
+                    </div>
+                    <div>
+                      <div class="flight-info-airline__timer">07:10 - 8:10</div>
+                      <div class="airline-name">
+                        Vietnam Airline <span class="airline-info">VN7220</span>
+                      </div>
                     </div>
                   </div>
+
                   <div class="flight-info-duration">
                     <img
                       src="./images/time-outline.svg"
@@ -299,60 +297,60 @@
                     <span class="flight-info-duration__timer">1h</span>
                   </div>
                 </div>
-              </div>
-              <div>
-                <div>
-                  <img
-                    src="./images/close-outline.svg"
-                    class="flight-info-duration__clock"
-                  />
-                  <span>Không hoàn tiền</span>
-                </div>
-                <div>
-                  <img
-                    src="./images/checkmark-outline.svg"
-                    class="flight-info-duration__clock"
-                  />
-                  <span>Có áp dụng đổi lịch bay</span>
-                </div>
-              </div>
-              <div>
-                <div>Giá chi tiết</div>
-                <div class="d-flex flex--space-between">
-                  <div>Người lớn</div>
-                  <div rtl>1.500.000đ</div>
-                </div>
-                <div class="d-flex flex--space-between">
-                  <div>Số lượng</div>
-                  <div rtl>2</div>
+
+                <div class="brand-amenity-value">
+                  <div class="--item">
+                    <img
+                      src="./images/close-outline.svg"
+                      class="fl-filter-gray-100 brand-amenity-value__icon"
+                    />
+                    <span class="fl-fc-gray-200">Không hoàn tiền</span>
+                  </div>
+                  <div class="--item">
+                    <img
+                      src="./images/checkmark-outline.svg"
+                      class="fl-filter-primary brand-amenity-value__icon"
+                    />
+                    <span class="fl-fc-primary">Có áp dụng đổi lịch bay</span>
+                  </div>
                 </div>
               </div>
-              <div>
+
+              <div class="fl-bb fl-bbs-dotted fl-bc-gray-500 fl-mb24"></div>
+
+              <div class="flight-price fl-mb10">
+                <div class="--title">Giá chi tiết</div>
                 <div class="d-flex flex--space-between">
-                  <div>Trẻ em</div>
-                  <div rtl>500.000đ</div>
+                  <div class="--label">Người lớn</div>
+                  <div rtl class="--value">1.500.000đ</div>
                 </div>
                 <div class="d-flex flex--space-between">
-                  <div>Số lượng</div>
-                  <div rtl>1</div>
+                  <div class="--label">Số lượng</div>
+                  <div rtl class="--value">2</div>
+                </div>
+              </div>
+              <div class="fl-bb fl-bbs-dotted fl-bc-gray-500 fl-mb24"></div>
+              <div class="flight-price fl-mb10">
+                <div class="d-flex flex--space-between price">
+                  <div class="--label">Trẻ em</div>
+                  <div rtl class="--value">500.000đ</div>
+                </div>
+                <div class="d-flex flex--space-between">
+                  <div class="--label">Số lượng</div>
+                  <div rtl class="--value">1</div>
                 </div>
               </div>
             </div>
             <div class="voucher-input-wrapper">
-              <div>Nhập mã giảm giá</div>
-              <div>
+              <div class="--title">Nhập mã giảm giá</div>
+              <div class="d-flex">
                 <input type="text" />
-                <button
-                  type="button"
-                  class="fl-btn-primary fl-h32 fl-px24 fl-bar4 fl-h:bg-primary"
-                >
-                  Thêm
-                </button>
+                <button type="button">Thêm</button>
               </div>
             </div>
-            <div>
-              <div>Tổng cộng</div>
-              <div>2.204.000đ</div>
+            <div class="price-summary">
+              <div class="--label">Tổng cộng</div>
+              <div class="--value">2.204.000đ</div>
             </div>
           </div>
         </div>
