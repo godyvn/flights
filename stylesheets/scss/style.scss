@@ -476,7 +476,7 @@ body {
       }
     }
     .flight-info-airline {
-      padding: 30px 0 24px;
+      // padding: 30px 0 24px;
       &__date {
         color: var(--fl-gray);
         font-size: 18px;
@@ -529,13 +529,13 @@ body {
         color: var(--fl-gray);
         font-size: 18px;
         line-height: 19px;
-        font-weight: var(--fl-fw-semibold);
+        font-weight: var(--fl-fw-medium);
         margin-bottom: 14px;
       }
       .--label {
         color: var(--fl-gray-100);
         font-size: 16px;
-        font-weight: var(--fl-fw-medium);
+        // font-weight: var(--fl-fw-medium);
         line-height: 17px;
         margin-bottom: 14px;
       }
@@ -543,7 +543,7 @@ body {
         color: var(--fl-gray);
         font-size: 16px;
         line-height: 17px;
-        font-weight: var(--fl-fw-semibold);
+        font-weight: var(--fl-fw-medium);
       }
     }
     .price-summary {
@@ -602,7 +602,7 @@ body {
     line-height: 17px;
     margin-bottom: 8px;
     display: block;
-    font-weight: var(--fl-fw-medium);
+    font-weight: normal;
   }
   .fl-form-control {
     color: var(--fl-gray-200);
@@ -693,6 +693,12 @@ body {
     width: 12px;
     transform: rotate(32deg);
   }
+  &.reverse {
+    &:after {
+      left: 2px;
+      transform: rotate(328deg);
+    }
+  }
 }
 
 .voucher-input-wrapper {
@@ -714,7 +720,8 @@ body {
     margin-right: 12px;
     box-shadow: none;
     outline: none;
-    width: calc(100% - 107px);
+    // width: calc(100% - 107px);
+    flex: 1;
   }
   button {
     background-color: var(--fl-primary);
@@ -723,5 +730,41 @@ body {
     border: 0;
     padding: 0 30px;
     border-radius: 8px;
+  }
+}
+
+.flight-baggage {
+  .--title {
+    width: 125px;
+    margin-bottom: 0;
+  }
+  .--item-wrap {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .--item {
+    border-radius: 4px;
+    border: 1px solid var(--fl-gray-500);
+    height: 32px;
+    padding: 8px 10px 8px 28px !important;
+    margin: 0;
+    color: var(--fl-gray-100);
+    font-size: 14px;
+    &.active {
+      color: #fff;
+      background-color: var(--fl-primary);
+      border-color: var(--fl-primary);
+    }
+    .checkmark {
+      width: 14px;
+      height: 14px;
+      top: 8px;
+      left: 8px;
+      &:after {
+        width: 5px;
+        height: 5px;
+      }
+    }
   }
 }
