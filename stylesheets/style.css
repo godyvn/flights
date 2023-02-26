@@ -30,25 +30,25 @@
   font-family: "SVN-Gilroy";
   font-style: Regular;
   font-weight: 400;
-  src: url("../../fonts/SVN-Gilroy-Regular.otf") format("opentype");
+  src: url("../../fonts/SVN-Gilroy-Regular.otf") format("opentype"), url("/flights/fonts/SVN-Gilroy-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "SVN-Gilroy";
   font-style: Bold;
   font-weight: 700;
-  src: url("../../fonts/SVN-Gilroy-Bold.otf") format("opentype");
+  src: url("../../fonts/SVN-Gilroy-Bold.otf") format("opentype"), url("/flights/fonts/SVN-Gilroy-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "SVN-Gilroy";
   font-style: Medium;
   font-weight: 500;
-  src: url("../../fonts/SVN-Gilroy-Medium.otf") format("opentype");
+  src: url("../../fonts/SVN-Gilroy-Medium.otf") format("opentype"), url("/flights/fonts/SVN-Gilroy-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "SVN-Gilroy";
   font-style: SemiBold;
   font-weight: 600;
-  src: url("../../fonts/SVN-Gilroy-SemiBold.otf") format("opentype");
+  src: url("../../fonts/SVN-Gilroy-SemiBold.otf") format("opentype"), url("/flights/fonts/SVN-Gilroy-SemiBold.otf") format("opentype");
 }
 .radio {
   margin: 0;
