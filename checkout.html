@@ -11,7 +11,7 @@
   <body>
     <div id="app-container" class="fl-checkout-page fl-main">
       <form method="POST" action="">
-        <div class="fl-container d-flex flex--ai-start">
+        <div class="fl-container d-flex flex--ai-start fl-main-content">
           <div class="fl-primary fl-mr30">
             <div class="fl-checkout-title">Vé máy bay</div>
             <div class="fl-card fl-checkout-card">
@@ -26,7 +26,7 @@
                   Đăng nhập
                 </button>
               </div>
-              <div class="fl-form-group fl-col-6 fl-pr15">
+              <div class="fl-form-group fl-col-6 --m-w-fit fl-pr15">
                 <label>Họ tên</label>
                 <input
                   type="input"
@@ -35,7 +35,7 @@
                 />
               </div>
               <div class="fl-form-group d-flex flex--space-between fl-mb24">
-                <div class="fl-col-6 fl-pr15">
+                <div class="fl-col-6 --m-w-fit fl-pr15">
                   <label>Email</label>
                   <input
                     type="email"
@@ -43,7 +43,7 @@
                     class="fl-form-control --w-fit"
                   />
                 </div>
-                <div class="fl-col-6 fl-pl15">
+                <div class="fl-col-6 --m-w-fit fl-pl15">
                   <label>Số điện thoại</label>
                   <input
                     type="input"
@@ -88,9 +88,9 @@
                   sau khi đặt vé.
                 </div>
               </div>
-              <div class="fl-form-group fl-col-6 fl-pr15">
+              <div class="fl-form-group fl-col-6 --m-w-fit fl-pr15">
                 <label>Danh xưng</label>
-                <div class="fl-select-custom fl-col-6">
+                <div class="fl-select-custom fl-col-6 --m-w-fit">
                   <label>
                     <img
                       src="./images/chevron-down-outline.svg"
@@ -106,7 +106,7 @@
                 </div>
               </div>
               <div class="fl-form-group d-flex flex--space-between fl-mb24">
-                <div class="fl-col-6 fl-pr15">
+                <div class="fl-col-6 --m-w-fit fl-pr15">
                   <label>Họ (vd: Nguyen)</label>
                   <input
                     type="type"
@@ -114,7 +114,7 @@
                     class="fl-form-control --w-fit"
                   />
                 </div>
-                <div class="fl-col-6 fl-pl15">
+                <div class="fl-col-6 --m-w-fit fl-pl15">
                   <label>Tên đệm & tên (vd: Van A)</label>
                   <input
                     type="input"
@@ -124,7 +124,7 @@
                 </div>
               </div>
               <div class="fl-form-group d-flex flex--space-between fl-mb24">
-                <div class="fl-col-6 fl-pr15">
+                <div class="fl-col-6 --m-w-fit fl-pr15">
                   <label>Ngày tháng năm sinh</label>
                   <input
                     type="type"
@@ -132,7 +132,7 @@
                     class="fl-form-control --w-fit"
                   />
                 </div>
-                <div class="fl-col-6 fl-pl15">
+                <div class="fl-col-6 --m-w-fit fl-pl15">
                   <label>Quốc tịch</label>
                   <div class="fl-select-custom">
                     <label>
@@ -154,71 +154,75 @@
                 <div class="fl-mb24">
                   <label>Hành lý ký gửi</label>
                 </div>
-                <div class="d-flex flight-baggage fl-mb16">
+                <div class="d-flex fl-flight-baggage fl-mb16">
                   <div>
                     <label class="--title">Chuyến đi</label>
                   </div>
                   <div class="--item-wrap radio">
                     <label class="--item radio__item active"
                       >Không, cảm ơn
-                      <input type="radio" value="1" checked />
+                      <input
+                        type="radio"
+                        name="baggageFrom"
+                        value="1"
+                        checked />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >30kg - 292.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageFrom" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >40kg - 392.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageFrom" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >50kg - 492.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageFrom" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >60kg - 592.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageFrom" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >70kg - 692.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageFrom" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >80kg - 792.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageFrom" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >90kg - 892.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageFrom" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                   </div>
                 </div>
-                <div class="d-flex flight-baggage">
+                <div class="d-flex fl-flight-baggage">
                   <div>
                     <label class="--title">Chuyến về</label>
                   </div>
                   <div class="radio --item-wrap">
                     <label class="--item radio__item active"
                       >Không, cảm ơn
-                      <input type="radio" value="1" checked />
+                      <input type="radio" name="baggageTo" value="1" checked />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >30kg - 292.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageTo" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                     <label class="--item radio__item"
                       >30kg - 292.000 đ
-                      <input type="radio" value="2" />
+                      <input type="radio" name="baggageTo" value="2" />
                       <span class="checkmark card5"></span
                     ></label>
                   </div>
@@ -226,12 +230,13 @@
               </div>
             </div>
 
+            <!-- Invoice (S) -->
             <div class="fl-mb30">
               <div class="radio checkbox fl-mb0">
                 <label
                   class="radio__item fl-fw-medium fl-fs16"
                   data-toggle="collapse"
-                  href="#invoice"
+                  data-target="#invoice"
                   aria-expanded="false"
                   aria-controls="invoice"
                   >Tôi muốn xuất hóa đơn
@@ -271,41 +276,72 @@
                 />
               </div>
             </div>
+            <!-- Invoice (E) -->
 
+            <!-- Payment Method (S) -->
             <div class="fl-card fl-checkout-card">
               <div class="fl-checkout-card__header">
                 <div class="--title">Thanh toán</div>
               </div>
 
               <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
-                <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                <label
+                  class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                  data-toggle="collapse"
+                  data-target="#payment-bank"
+                  aria-expanded="true"
+                  aria-controls="payment-bank"
                   >Chuyển khoản ngân hàng
-                  <input type="checkbox" value="1" />
+                  <input type="radio" name="paymentMethod" value="1" />
                   <span class="checkmark card5"></span
                 ></label>
+                <div class="collapse fl-pt24 fl-fc-gray" id="payment-bank">
+                  # chuyển khoản ngân hàng
+                </div>
               </div>
+
               <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
-                <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                <label
+                  class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
+                  data-toggle="collapse"
+                  data-target="#payment-official"
+                  aria-expanded="true"
+                  aria-controls="payment-official"
                   >Thanh toán trực tiếp tại văn phòng
-                  <input type="checkbox" value="1" />
+                  <input type="radio" name="paymentMethod" value="1" checked />
                   <span class="checkmark card5"></span
                 ></label>
+                <div
+                  class="collapse in fl-pt24 fl-fc-gray payment-content"
+                  id="payment-official"
+                >
+                  <p>
+                    Văn phòng tại TP. Hồ Chí Minh: 2/24 Đoàn Thị Điểm, Phường 1,
+                    Quận Phú Nhuận, TP.HCM
+                  </p>
+                  <ul>
+                    <li>Thứ 2 đến thứ 7: 9h00 - 12h00</li>
+                    <li>Chủ nhật: nghỉ</li>
+                    <li>Hotline: 0958.295.732</li>
+                  </ul>
+                </div>
               </div>
               <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
                 <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
                   >Thanh toán trực tuyến
-                  <input type="checkbox" value="1" />
+                  <input type="radio" name="paymentMethod" value="1" />
                   <span class="checkmark card5"></span
                 ></label>
               </div>
               <div class="radio fl-mb0 fl-py25 fl-bb fl-bc-gray-500">
                 <label class="radio__item fl-fw-medium fl-fs16 fl-fc-gray-200"
                   >Thanh toán bằng ví Momo/Zalopay/...
-                  <input type="checkbox" value="1" />
+                  <input type="radio" name="paymentMethod" value="1" />
                   <span class="checkmark card5"></span
                 ></label>
               </div>
             </div>
+            <!-- Payment Method (E) -->
 
             <div class="fl-mb30">
               <div class="radio checkbox fl-mb0">
