@@ -1498,5 +1498,10 @@ body {
     gap: 6px;
   }
 }
+@media (max-width: 576px) {
+  .fl-checkout-page .fl-flight-baggage .--item {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
