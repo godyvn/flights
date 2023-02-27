@@ -985,15 +985,19 @@ body {
         }
         .flight-info-stop {
           .flight-info-stop__line {
-            margin-top: 20px;
+            margin-top: 7px;
           }
           .flight-info-duration {
             display: flex;
             align-items: center;
             text-align: center;
-            justify-content: start;
+            justify-content: center;
+            margin-top: 4px;
             .flight-info-duration__clock {
-              margin-top: 0;
+              margin-top: -3px;
+            }
+            .flight-info-duration__timer {
+              line-height: 19px;
             }
           }
         }
