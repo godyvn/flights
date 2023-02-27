@@ -939,7 +939,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px solid var(--fl-gray-500);
   gap: 10px;
 }
 
@@ -1246,6 +1245,7 @@ body {
   margin: 0;
   color: var(--fl-gray-100);
   font-size: 14px;
+  line-height: 20px;
 }
 .fl-flight-baggage .--item .checkmark {
   width: 14px;
@@ -1438,6 +1438,13 @@ body {
   .fl-search-page .fl-flights .fl-flight-info-wrap .flight-info-details .flight-info-city > div {
     display: block;
   }
+  .fl-search-page .fl-flights .fl-flight-info-wrap .flight-info-details .--price-table {
+    width: 100%;
+    overflow-y: auto;
+  }
+  .fl-search-page .fl-flights .fl-flight-info-wrap .flight-info-details .--price-table .--title {
+    white-space: nowrap;
+  }
   .fl-checkout-page .fl-main-content {
     padding: 0 20px;
     margin-bottom: 30px;
@@ -1486,6 +1493,9 @@ body {
   }
   .fl-checkout-page .fl-flight-baggage .--item {
     padding: 6px 8px 8px 28px !important;
+  }
+  .fl-flight-baggage .--item-wrap {
+    gap: 6px;
   }
 }
 
