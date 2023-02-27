@@ -1217,6 +1217,7 @@ body {
   margin-right: 12px;
   box-shadow: none;
   outline: none;
+  width: calc(100% - 95px);
   flex: 1;
 }
 .voucher-input-wrapper button {
